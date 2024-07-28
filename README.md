@@ -14,7 +14,7 @@ If the theme does not show up refresh Discord using **CTRL+R** or restart Discor
 	- Download [**DiscordNight.theme.css**](https://betterdiscord.app/Download?id=155) and navigate to **Settings > Themes** and click **Open Themes Folder** or place the file in **%appdata%/Vencord/themes** and then enable **DiscordNight**.    
 - ***Method 2***: 
 	- Navigate to **Settings > Themes** and go to **Online Themes** tab and in the input field paste in this URL:  
-```https://raw.githubusercontent.com/KillYoy/DiscordNight/master/DiscordNight.theme.css```
+```https://raw.githubusercontent.com/MonolithOrchids/MinimalNightTheme/master/MinimalNight.theme.css```
 
 ### Important info
 
