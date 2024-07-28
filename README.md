@@ -1,5 +1,5 @@
 # Fork of the [**DiscordNight**](https://github.com/KillYoy/DiscordNight) made by KillYoy.
-## No visual changes were made, is only kept updated with the latest Discord version.
+## No visual changes were made, only updated to match with the latest Discord version.
 
 ![](https://i.imgur.com/XQApc9q.png)
 
