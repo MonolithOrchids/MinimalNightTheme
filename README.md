@@ -91,10 +91,10 @@ I have made some import addons which changes certain aspects of the theme.
 You can change the **Server list message notice** and **Chat file attachment button** back to their original appearance by adding either of these two lines of code to your **DiscordNight.theme.css**
 
 ```css 
-@import url("https://killyoy.github.io/DiscordNight/Addons/Vanilla_ServerList_Message_Notice.theme.css"); 
+@import url("https://raw.githubusercontent.com/MonolithOrchids/MinimalNightTheme/master/Addons/Vanilla_ServerList_Message_Notice.theme.css"); 
 ```   
 ```css 
-@import url("https://killyoy.github.io/DiscordNight/Addons/Vanilla_Attachment_Button.theme.css"); 
+@import url("https://raw.githubusercontent.com/MonolithOrchids/MinimalNightTheme/master/Addons/Vanilla_Attachment_Button.theme.css"); 
 ```
 
 # Installing DiscordNight without client mods (Not recommended)
