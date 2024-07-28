@@ -1,66 +1,60 @@
 /**
- * @name DiscordNightFix
- * @version 7.17.24
- * @description Dark and compact theme for BetterDiscord
- * @source https://github.com/MonolithOrchids/DiscordNight/
- * @updateUrl https://github.com/MonolithOrchids/DiscordNight/blob/master/DiscordNightFix.css
- * @website 
- * @donate https://www.paypal.me/KillYoy
- * @patreon 
- * @invite 
- * @author KillYoy#0295
- * @authorId 98468214824001536
- * @authorLink 
+ * @name MinimalNight
+ * @version 7.28.24
+ * @description Dark and compact theme for Discord. Fork of github.com/KillYoy/DiscordNight
+ * @source https://github.com/MonolithOrchids/MinimalNightTheme/
+ * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
+ * @author MonolithOrchids / @dka on Discord
 */
 
 :root {
-	--Settings-Theme-Version: "DiscordNight v7.17.24";
-	
+	--Settings-Theme-Version: "DiscordNight v7.28.24";
+
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
 	--Channel-List-Active-Threads: flex;				/* flex = ON, none = OFF */
 	--Channel-List-Upcoming-Events: flex;				/* flex = ON, none = OFF */
 	--Channel-List-Boost-Goal: block;					/* block = ON, none = OFF */
 	--Channel-List-Width: 200px;						/* 200px, Discord default = 240px */
-	
+
 	--User-List-Width: 200px;							/* 200px, Discord default = 240px */
 	--User-Popout-Width: 240px;							/* 240px, Discord default = 300px */
 	--User-Status-Popout-Width: var(--Channel-List-Width);/* 240px, Discord default = 300px */
-	
+
 	--Search-List-Width: 488px;							/* 488px, Discord default = 418px */
 	--Inbox-List-Width: 522px;							/* 522px, Discord default = 480px */
-	
+
 	--Emoji-Menu-Height: 612px;							/* 612px or 492px, Discord default = 444px */
-	
+
 	--Chatbox-Gift-Button: none;						/* flex = ON, none = OFF */
 	--Chatbox-GIF-Button: none;							/* flex = ON, none = OFF */
 	--Chatbox-Stickers-Button: none;					/* flex = ON, none = OFF */
-	
+
 	--Chat-Emoji-Size: 1.75rem;							/* 1.75rem, Discord default = 1.375rem */
 	--Chat-Emoji-Large-Size: 2rem;						/* 2rem, Discord default = 3rem */
 	--Chat-Sticker-Size: 10rem;							/* 5rem, Discord default = 10rem */
 	--Chat-Super-Reaction-Button: none;					/* flex = ON, none = OFF */
 	--Chat-Wave-To-New-User-Button: flex;				/* flex = ON, none = OFF */
 	--Chat-Wave-To-New-DM-Button: flex;					/* flex = ON, none = OFF */
-	
+
 	--Text-Channels-Capital-Letter: capitalize;			/* capitalize, none */
-	
+
 	--Voice-Noise-Suppression: flex;					/* flex = ON, none = OFF */
 	--Start-Activities-Button: flex;					/* flex = ON, none = OFF */
-	
+
 	--Embed-Remove-Button: flex;						/* flex = ON, none = OFF */
-	
+
 	--Context-Menu-Emoji-Toolbar: none;					/* flex = ON, none = OFF */
-	
+
 	--Super-Reaction-Animations: none;					/* flex = ON, none = OFF */
 	--User-Profile-Effects: flex;						/* flex = ON, none = OFF */
-	
+
 	--Home-Nitro-Button: none;							/* flex = ON, none = OFF */
 	--Home-Store-Button: none;							/* flex = ON, none = OFF */
 	--Home-Direct-Messages-Header: flex;				/* flex = ON, none = OFF */
 	--Home-Close-DM-Button: block;						/* block = ON, none = OFF */
 	--Friends-List-Searchbar: none;						/* flex = ON, none = OFF */
-	
+
 	--Titlebar-Help-Icon: none;							/* flex = ON, none = OFF */
 }
 
@@ -73,7 +67,7 @@
 	--bdfdb-green: var(--status-positive-background);				/* hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%); */
 	--bdfdb-yellow: var(--status-warning-background);				/* hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%); */
 	--bdfdb-red: var(--status-danger-background);					/* hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%); */
-	
+
 	--blurple: var(--bd-blue);
 	--text-brand: var(--bd-blue);									/* #949CF7 */
 	--control-brand-foreground: var(--bd-blue);						/* #A5B3E7 */
@@ -87,16 +81,16 @@
 	--brand-experiment-530: var(--bd-blue-hover);
 	--brand-experiment-560: var(--bd-blue-hover);
 	--brand-experiment-600: var(--bd-blue-active);
-	
+
 	--primary-600: #111111;
 	--primary-645: #141414;
 	--primary-630: #191919;
 	--primary-700: #262626;
-	
+
 	--primary-dark-600-rgb: 17,17,17;
 	--primary-dark-660-rgb: 26,26,26;
 	--green-360: var(--status-positive-background); /* #43B581 */
-	
+
 	--background-primary: #111111;									/* #36393F */
 	--background-secondary: #161616;								/* #2F3136 */
 	--background-tertiary: #191919;									/* #202225 */
@@ -110,12 +104,12 @@
 	--channels-default: #8E9297;									/* #8E9297 */
 	--modal-background: #212121;
 	--modal-footer-background: #141414;
-	
+
 	--scrollbar-auto-thumb: #1B1B1B;
 	--scrollbar-auto-track: #141414;
 	--scrollbar-thin-thumb: #1B1B1B;
 	--scrollbar-thin-track: transparent;
-	
+
 	--background-modifier-hover: rgba(0,0,0,0.15);
 	--background-modifier-active: rgba(0,0,0,0.2);
 	--background-modifier-selected: rgba(0,0,0,0.3);
@@ -140,9 +134,9 @@
 	--info-warning-foreground: var(--status-warning-background);	/* #FAA61A */
 	--info-danger-background: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%, 0.1);	/* rgba(237,66,69,0.1) */
 	--info-danger-foreground: var(--status-danger-background);		/* #ED4245 */
-	
+
 	--interactive-muted: #5E5F66;
-	
+
 	--font-display: var(--font-primary);
 }
 
