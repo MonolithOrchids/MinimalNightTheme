@@ -1,3 +1,6 @@
+# Fork of the [**DiscordNight**](https://github.com/KillYoy/DiscordNight) made by KillYoy.
+## No visual changes were made, is only kept updated with the latest Discord version.
+
 ![](https://i.imgur.com/XQApc9q.png)
 
 Requires the [**Discord**](https://discordapp.com/) desktop app with [**BetterDiscord**](https://betterdiscord.app/) or [**Vencord**](https://vencord.dev) installed (Or any other Discord client mod that supports themes).
