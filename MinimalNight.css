@@ -9,7 +9,8 @@
 
 :root {
 	--Settings-Theme-Version: "MinimalNight v8.5.24";
-	
+
+	--app-launcher-entrypoint: none;
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
 	--Channel-List-Active-Threads: flex;				/* flex = ON, none = OFF */
@@ -10472,4 +10473,9 @@ body {
 #pluginNotice .button__33db6:hover {
 	background-color: var(--status-positive-background);
 	color: #FFFFFF;
+}
+
+/* Apps Launcher Button: Remove Button */
+.channelAppLauncher_df39bd {
+	display: var(--app-launcher-entrypoint);
 }
