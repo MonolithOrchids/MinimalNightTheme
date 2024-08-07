@@ -1,6 +1,6 @@
 /**
  * @name MinimalNight
- * @version 8.6.24
+ * @version 8.7.24
  * @description Dark and compact theme for Discord. Fork of github.com/KillYoy/DiscordNight
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
@@ -8,7 +8,7 @@
 */
 
 :root {
-	--Settings-Theme-Version: "MinimalNight v8.6.24";
+	--Settings-Theme-Version: "MinimalNight v8.7.24";
 
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
@@ -56,7 +56,6 @@
 	--Friends-List-Searchbar: none;						/* flex = ON, none = OFF */
 
 	--Titlebar-Help-Icon: none;							/* flex = ON, none = OFF */
-	--app-launcher-entrypoint: none;
 }
 
 :root,
@@ -6665,8 +6664,8 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 }
 /* My Account Settings Card Avatar */
 .accountProfileCard_b69b77 .userInfo_b69b77 .avatar_b69b77 {
-	width: 100px !important;
-	height: 100px !important;
+	width: 115px !important;
+	height: 105px !important;
 	background-color: #141414;
 	border: 8px solid #141414;
 }
@@ -10427,6 +10426,11 @@ body {
 	text-transform: none;
 }
 
+/* App Launcher: Remove Button */
+.channelAppLauncher_df39bd {
+	display: none;
+}
+
 /********************************************** Vencord **********************************************/
 
 .vc-addon-card {
@@ -10473,9 +10477,4 @@ body {
 #pluginNotice .button__33db6:hover {
 	background-color: var(--status-positive-background);
 	color: #FFFFFF;
-}
-
-/* Apps Button: Remove Button */
-.channelAppLauncher_df39bd {
-	display: var(--app-launcher-entrypoint);
 }
