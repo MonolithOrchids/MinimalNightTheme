@@ -1,6 +1,6 @@
 /**
  * @name MinimalNight
- * @version 8.7.26
+ * @version 8.7.27
  * @description Dark and compact theme for Discord. Fork of github.com/KillYoy/DiscordNight
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
@@ -56,6 +56,7 @@
 	--Friends-List-Searchbar: none;						/* flex = ON, none = OFF */
 
 	--Titlebar-Help-Icon: none;							/* flex = ON, none = OFF */
+
 }
 
 :root,
@@ -2179,10 +2180,7 @@
 	box-shadow: inset 0 0 0 2px #F04747, inset 0 0 0 2.5px var(--background-primary);
 }
 .container_b2ca13 .avatarWrapper_b2ca13 [aria-label*="Streaming"] .avatarSpeaking_c51b4e {
-	box-shadow: inset 0 0 0 2px #F04747, inset 0 0 0 2.5px var(--background-primary);
-}
-.container_b2ca13 .avatarWrapper_b2ca13 [aria-label*="Idle"] .avatarSpeaking_c51b4e {
-	box-shadow: inset 0 0 0 2px #FAA61A, inset 0 0 0 2.5px var(--background-primary);
+	box-shadow: inset 0 0 0 2px #593695, inset 0 0 0 2.5px var(--background-primary);
 }
 .container_b2ca13 .avatarWrapper_b2ca13 [aria-label*="Offline"] .avatarSpeaking_c51b4e,
 .container_b2ca13 .avatarWrapper_b2ca13 [aria-label*="Invisible"] .avatarSpeaking_c51b4e {
@@ -9449,6 +9447,7 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 [class*=userPopoutOuter_] [class*=userProfileInner_] .thin_c49869,
 [class*=userPopoutOuter_] [class*=userProfileInner_] {
     gap: 0px;
+	padding-bottom: 0px;
 }
 
 /* UserPopout Header To Body: Default */
@@ -9501,7 +9500,7 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 	margin-bottom: 4px;
 }
 [class*=userPopoutOuter_] .thin_c49869 .container_c32acf {
-	padding: 34px 4px 6px 10px;
+	padding: 34px 4px 6px 10px !important;
 	margin-bottom: 0px;
 }
 [class*=userPopoutOuter_] .userProfileInnerThemedNonPremium_c69a7b .section_d7a21f.usernameSection_d2b491 {
@@ -10302,27 +10301,27 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 [class*=userPopoutOuter_] .avatarWrapper_f89da9 .wrapper_c51b4e:has([mask="url(#svg-mask-status-online-mobile)"]),
 [class*=userPopoutOuter_] .avatar_f94206 .wrapper_c51b4e:has([mask="url(#svg-mask-status-online)"]),
 [class*=userPopoutOuter_] .avatar_f94206 .wrapper_c51b4e:has([mask="url(#svg-mask-status-online-mobile)"]) {
-	--user-status-background: linear-gradient(#43B581 1px, rgba(67,181,121,0.15) 2px, rgba(67,181,121,0) 80%, transparent 75%);
+	--user-status-background: linear-gradient(#43B581 3px, rgba(67,181,121,0.15) 2px, rgba(67,181,121,0) 80%, transparent 75%);
 	border: 2px solid #43B581;
 }
 [class*=userPopoutOuter_] .avatar_f94206 .wrapper_c51b4e:has([mask="url(#svg-mask-status-idle)"]),
 [class*=userPopoutOuter_] .avatarWrapper_f89da9 .wrapper_c51b4e:has([mask="url(#svg-mask-status-idle)"]) {
-	--user-status-background: linear-gradient(#FAA61A 1px, rgba(250,166,26,0.15) 2px, rgba(250,166,26,0) 80%, transparent 75%);
+	--user-status-background: linear-gradient(#FAA61A 3px, rgba(250,166,26,0.15) 2px, rgba(250,166,26,0) 80%, transparent 75%);
 	border: 2px solid #FAA61A;
 }
 [class*=userPopoutOuter_] .avatar_f94206 .wrapper_c51b4e:has([mask="url(#svg-mask-status-dnd)"]),
 [class*=userPopoutOuter_] .avatarWrapper_f89da9 .wrapper_c51b4e:has([mask="url(#svg-mask-status-dnd)"]) {
-	--user-status-background: linear-gradient(#F04747 1px, rgba(240,71,71,0.15) 2px, rgba(240,71,71,0) 80%, transparent 75%);
+	--user-status-background: linear-gradient(#F04747 3px, rgba(240,71,71,0.15) 2px, rgba(240,71,71,0) 80%, transparent 75%);
 	border: 2px solid #F04747;
 }
 [class*=userPopoutOuter_] .avatar_f94206 .wrapper_c51b4e:has([mask="url(#svg-mask-status-streaming)"]),
 [class*=userPopoutOuter_] .avatarWrapper_f89da9 .wrapper_c51b4e:has([mask="url(#svg-mask-status-streaming)"]) {
-	--user-status-background: linear-gradient(#593695 1px, rgba(89,54,149,0.15) 2px, rgba(89,54,149,0) 80%, transparent 75%);
+	--user-status-background: linear-gradient(#593695 3px, rgba(89,54,149,0.15) 2px, rgba(89,54,149,0) 80%, transparent 75%);
 	border: 2px solid #593695;
 }
 [class*=userPopoutOuter_] .avatar_f94206 .wrapper_c51b4e:has([mask="url(#svg-mask-status-offline)"]),
 [class*=userPopoutOuter_] .avatarWrapper_f89da9 .wrapper_c51b4e:has([mask="url(#svg-mask-status-offline)"]) {
-	--user-status-background: linear-gradient(#747F8D 1px, rgba(116,127,141,0.1) 2px, rgba(116,127,141,0) 80%, transparent 75%);
+	--user-status-background: linear-gradient(#747F8D 3px, rgba(116,127,141,0.1) 2px, rgba(116,127,141,0) 80%, transparent 75%);
 	border: 2px solid #747F8D;
 }
 [class*=userPopoutOuter_] .avatar_f94206 .wrapper_c51b4e:has([mask="url(#svg-mask-status-online-mobile)"]),
@@ -10332,6 +10331,34 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 	border-right: 0px solid transparent;
 	border-bottom: 0px solid transparent;
 }
+
+/* User Popout Profile: Online Status Bottom Border Color */
+[class*=userPopoutOuter_] [class^=userPopoutInner_]:has([mask="url(#svg-mask-status-online-mobile)"]),
+[class*=userPopoutOuter_] [class^=userPopoutInner_]:has([mask="url(#svg-mask-status-online)"]) 
+{
+    border-bottom: 4px solid #43B581;
+}
+
+[class*=userPopoutOuter_] [class^=userPopoutInner_]:has([mask="url(#svg-mask-status-idle)"])
+{
+    border-bottom: 4px solid #FAA61A;
+}
+
+[class*=userPopoutOuter_] [class^=userPopoutInner_]:has([mask="url(#svg-mask-status-dnd)"]) 
+{
+    border-bottom: 4px solid #F04747;
+}
+
+[class*=userPopoutOuter_] [class^=userPopoutInner_]:has([mask="url(#svg-mask-status-streaming)"])
+{
+    border-bottom: 4px solid #593695;
+}
+
+[class*=userPopoutOuter_] [class^=userPopoutInner_]:has([mask="url(#svg-mask-status-offline)"])
+{
+    border-bottom: 4px solid #747F8D;
+}
+
 /* User Popout Profile: Status Change/First Load Fix */
 /*
 [class*=userPopoutOuter_] .avatarWrapper_f89da9 .wrapper_c51b4e[aria-label*="Online"] .avatar_ec3b75,
