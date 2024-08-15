@@ -1,14 +1,14 @@
 /**
  * @name MinimalNight
- * @version 8.7.27
+ * @version 8.15.24
  * @description Dark and compact theme for Discord. Fork of github.com/KillYoy/DiscordNight
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
- * @author MonolithOrchids / @dka on Discord
+ * @author @dka & gold_me
 */
 
 :root {
-	--Settings-Theme-Version: "MinimalNight v8.7.26";
+	--Settings-Theme-Version: "MinimalNight v8.15.24";
 
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
