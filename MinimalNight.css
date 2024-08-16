@@ -1,6 +1,6 @@
 /**
  * @name MinimalNight
- * @version 8.15.24
+ * @version 8.15.25
  * @description Dark and compact theme for Discord. Fork of github.com/KillYoy/DiscordNight
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
@@ -8,7 +8,7 @@
 */
 
 :root {
-	--Settings-Theme-Version: "MinimalNight v8.15.24";
+	--Settings-Theme-Version: "MinimalNight v8.7.26";
 
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
@@ -6335,9 +6335,15 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 	padding: 6px 8px;
 }
 .menu_d90b3d,
-.submenu_d90b3d {
+.submenu_d90b3d
+{
 	background-color: #202020;
 	min-width: 160px;
+	--interactive-normal: color-mix(
+    in oklab,
+    var(--primary-330) 100%,
+    var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+  );
 }
 .menu_d90b3d .colorDefault_d90b3d.focused_d90b3d,
 .menu_d90b3d .colorDefault_d90b3d:active:not(.hideInteraction_d90b3d) {
@@ -6368,12 +6374,12 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 }
 
 /* ToolTips: Black */
-.tooltipPrimary_b6c360,
+.tooltipPrimary_b6c360:not(.theme-light>.tooltipPrimary_b6c360),
 .tooltipBlack_b6c360 {
 	background-color: #262626 !important;
 	box-shadow: 0 1px 5px 1px #000000;
 }
-.tooltipPrimary_b6c360 .tooltipPointer_b6c360,
+.tooltipPrimary_b6c360:not(.theme-light>.tooltipPrimary_b6c360) .tooltipPointer_b6c360,
 .tooltipBlack_b6c360 .tooltipPointer_b6c360 {
 	border-top-color: #262626 !important;
 }
@@ -6901,7 +6907,7 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 .theme-dark .container_c67e31,
 .root_f9a4c9 .textArea_ab60f4,
 .lookFilled_f6639d.select_f6639d,
-.theme-dark .input_f8bc55,
+.theme-dark .input_f8bc55:not(.theme-light .input_f8bc55),
 .theme-dark .copyInputDefault_e19ebf {
 	background-color: #141414;
 	border-color: transparent;
@@ -6911,7 +6917,7 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 	border-color: rgba(240,71,71,.3);
 }
 .lookFilled_f6639d.select_f6639d:hover,
-.theme-dark .input_f8bc55:hover,
+.theme-dark .input_f8bc55:hover:not(.theme-light .input_f8bc55),
 .theme-dark .copyInputDefault_e19ebf:hover {
 	background-color: #111111;
 	border-color: transparent;
@@ -9571,11 +9577,7 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 [class*=userPopoutOuter_] .bannerSVGWrapper_b32cc2 circle {
 	display: none;
 }
-/* Move Custom Status */
-[class*=userPopoutOuter_] .visibleContainer_d0a252.biteSize_d0a252 {
-	left: 116px;
-	z-index: 4;
-}
+
 /* Remove extra padding */
 [class*=userPopoutOuter_] .invisibleContainer_d0a252 {
 	height: 0px;
@@ -9696,16 +9698,47 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 }
 
 /* Custom Status */
-[class*=userPopoutOuter_].theme-dark .customStatus__3aa7f .customStatusText_f5aa9a {
-	color: #FFFFFF;
-	text-shadow: -1px 1px 2px rgba(0,0,0,0.6);
+[class*=userPopoutOuter_] [class^=visibleContainer] 
+{
+    top: (var(--custom-user-banner-height-bite-size)) !important;
+    left: 124px !important;
 }
-[class*=userPopoutOuter_].theme-light .customStatus__3aa7f .customStatusText_f5aa9a {
-	font-weight: 500;
+[class*=userPopoutOuter_] [class^=invisibleContainer_] 
+{
+    left: 124px !important;
+    top: 0px !important;
 }
-[class*=userPopoutOuter_] .customStatus__3aa7f {
-	line-height: 22px;
+[class*=userPopoutOuter_] [class^=statusBubbleOuter_] [class*=incorporeal_] 
+{
+    position: relative;
 }
+[class*=userPopoutOuter_] [class^=statusBubbleOuter_] 
+{
+    width: calc(var(--User-Popout-Width) - 124px);
+    max-width: fit-content;
+}
+[class*=userPopoutOuter_] [class^=statusBubbleOuter_]::before,
+[class*=userPopoutOuter_] [class^=statusBubbleOuter_]::after 
+{
+    display: none;
+}
+[class*=userPopoutOuter_] [class*=statusBubbleSingleLineWithTextShape_],
+[class*=userPopoutOuter_] [class*=statusBubbleShape_] 
+{
+    border-radius: 0px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+[class*=userPopoutOuter_] [class^=popover_] 
+{
+    top: 90%;
+    right: min(80% - 29px);
+}
+[class*=userPopoutOuter_]:has([class^=visibleContainer] [class*=singleLineAlign_]) [class^=popover_] 
+{
+    top: 80%;
+}
+
 /* Custom Status: Emoji & Text */
 [class*=userPopoutOuter_] .customStatus__3aa7f .customStatusEmoji__00639 {
 	width: 24px;
@@ -10435,8 +10468,16 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 	position: relative;
 	z-index: 4;
 }
-
-
+/* User Popout Profile: Button Hover Transition */
+[class*=userPopoutOuter_] [class^=wrapper_] button
+{
+    opacity: 0;
+    transition: opacity var(--custom-button-transition-duration) linear;
+}
+[class*=userPopoutOuter_]:hover [class^=wrapper_] button
+{
+    opacity: 1;
+}
 
 /***********************************************************************************************/
 
