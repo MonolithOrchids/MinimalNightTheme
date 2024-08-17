@@ -8504,7 +8504,6 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 }
 
 /* Experiments/Developer Icons */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(n+48):nth-child(-n+57)::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="experiments-tab" i]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="developer-options-tab" i]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="hotspot-options-tab" i]::before,
