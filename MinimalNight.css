@@ -1,6 +1,6 @@
 /**
  * @name MinimalNight
- * @version 8.15.25
+ * @version 8.15.26
  * @description Dark and compact theme for Discord. Fork of github.com/KillYoy/DiscordNight
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
@@ -8,7 +8,7 @@
 */
 
 :root {
-	--Settings-Theme-Version: "MinimalNight v8.7.26";
+	--Settings-Theme-Version: "MinimalNight v8.15.26";
 
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
@@ -8237,31 +8237,31 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="profile-customization-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Styles.svg");
 }
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(4)::before,
+.standardSidebarView_c25c6d .side_a0 .item_a0[aria-label="Privacy & Safety"]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="privacy-&-safety-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Security.svg");
 }
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(5)::before,
-.standardSidebarView_c25c6d .side_a0 .item_a0[aria-label="Family Centre" i]::before {
+.standardSidebarView_c25c6d .side_a0 .item_a0[aria-label="Family Center"]::before,
+.standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="family-center-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Group.svg");
 }
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(6)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(7)::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="authorized-apps-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Apps.svg");
 }
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(7)::before,
+.standardSidebarView_c25c6d .side_a0 .item_a0[aria-label="Devices"]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="sessions-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Screen.svg");
 }
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(8)::before,
-.standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="passport-tab" i]::before {
+.standardSidebarView_c25c6d .side_a0 .item_a0[aria-label="Connections"]::before,
+.standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="connections-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Connection.svg");
 }
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(9)::before,
+.standardSidebarView_c25c6d .side_a0 .item_a0[aria-label="Clips"]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="settings-clips-tab"]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Camera.svg");
 }
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(10)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(11)::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="friend-requests-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Group.svg");
 }
@@ -8271,12 +8271,14 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="discord-nitro-tab" i]::before {
 	background-image: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Discord/Nitro.svg");
 	transform: scale(0.57);
+    filter: grayscale(0) contrast(1) brightness(1);
 	left: -3px;
 	top: 2px;
 	width: 42px;
 	height: 32px;
 	transition: 0ms;
 	z-index: 2;
+    
 }
 .standardSidebarView_c25c6d .side_a0 .item_a0:hover[aria-controls="discord-nitro-tab" i]::before,
 .standardSidebarView_c25c6d .side_a0 .selected_a0.item_a0[aria-controls="discord-nitro-tab" i]::before {
@@ -8289,6 +8291,7 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 	transition: 0ms;
 }
 /* Server Boost */
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(15)::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="nitro-server-boost-tab" i]::before {
 	background-image: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Discord/Boost.svg");
 	filter: grayscale(1) contrast(1) brightness(2);
@@ -8299,82 +8302,76 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 	filter: grayscale(0) contrast(1) brightness(1);
 }
 /* Subscriptions */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(14)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0[aria-label="Subscriptions" i]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="subscriptions-tab" i]::before {
 	background: url("https://fonts.gstatic.com/s/i/materialicons/fact_check/v14/24px.svg");
 	filter: invert(1);
 }
-/* Premium */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(15)::before,
-.standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="guild-role-subscription-tab" i]::before {
-	background: url("https://fonts.gstatic.com/s/i/materialicons/workspace_premium/v3/24px.svg");
-	filter: invert(1);
-}
 /* Gift Inventory */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(16)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0[aria-label="Gift Inventory" i]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="library-inventory-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Present.svg");
 }
 /* Billing */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(17)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0[aria-label="Billing" i]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="billing-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Credit.svg");
 }
 
 /* Appearance */
 .standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0[aria-label="Appearance" i]::before,
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(20)::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="appearance-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Formatting.svg");
 }
 /* Accessibility */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(21)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0[aria-label="Accessibility" i]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="accessibility-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Accessibility.svg");
 }
 /* Voice & Video */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(22)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0[aria-label="Voice & Video" i]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="voice-&-video-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Voice.svg");
 }
 /* Text & Images */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(23)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0[aria-label="Chat" i]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="text-&-images-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Messages.svg");
 }
 /* Notifications */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(24)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0[aria-label="Notifications" i]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="notifications-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Notification.svg");
 }
 /* Keybinds */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(25)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(26)::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="keybinds-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Keyboard.svg");
 }
 /* Language */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(26)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(27)::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="language-tab" i]::before {
 	background: url("https://fonts.gstatic.com/s/i/materialicons/translate/v16/24px.svg");
 	filter: invert(1);
 }
 /* Windows Settings */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(27)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(28)::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="windows-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Windows.svg");
 	transform: scale(0.81);
 }
 /* Linux Settings */
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0[data-tab-id="Linux" i]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="linux-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Diamond.svg");
 }
 /* Streamer Mode */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(28)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0[aria-label="Streamer Mode" i]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="streamer-mode-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Camera.svg");
 }
 /* Advanced */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(29)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0[aria-label="Advanced" i]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="advanced-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Memory_Board.svg");
 }
@@ -8437,17 +8434,17 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 }
 
 /* Activity Privacy */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(32)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0[aria-label="Activity Privacy" i]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="activity-privacy-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Security.svg");
 }
 /* Game Activity (Registered Games) */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(33)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(42)::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="game-activity-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Games.svg");
 }
 /* Game Overlay */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(34)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(43)::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="overlay-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Overlay.svg");
 }
@@ -8481,12 +8478,12 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 }
 
 /* What's New (ChangeLog) */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(41)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(46)::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="changelog-tab" i]::before {
 	background: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Logs.svg");
 }
 /* HypeSquad */
-.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(42)::before,
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(47)::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="hypesquad-online-tab" i]::before {
 	background-image: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Discord/Hypesquad.svg");
 	filter: grayscale(1) brightness(2);
@@ -8507,6 +8504,7 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 }
 
 /* Experiments/Developer Icons */
+.standardSidebarView_c25c6d [aria-label="User Settings"].side_a0 .item_a0:nth-child(n+48):nth-child(-n+57)::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="experiments-tab" i]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="developer-options-tab" i]::before,
 .standardSidebarView_c25c6d .side_a0 .item_a0[aria-controls="hotspot-options-tab" i]::before,
@@ -9714,7 +9712,7 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 }
 [class*=userPopoutOuter_] [class^=statusBubbleOuter_] 
 {
-    width: calc(var(--User-Popout-Width) - 124px);
+    width: 100%;
     max-width: fit-content;
 }
 [class*=userPopoutOuter_] [class^=statusBubbleOuter_]::before,
