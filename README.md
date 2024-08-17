@@ -19,7 +19,6 @@ If the theme does not show up refresh Discord using **CTRL+R** or restart Discor
 ### Important info
 
 - **Dark Theme** needs to be enabled in **Settings > Appearance > Theme** and select **Dark**.
-- Nitro exclusive theme appearance colors are not supported and may look broken.
 
 Keep in mind that things may break at any time because of Discords background updates which may cause you to have to reinstall BetterDiscord or wait for the theme to be updated.  
 In case there is anything that has not yet been fixed or any plugin related issues feel free to either make a new [issue](https://github.com/KillYoy/DiscordNight/issues/new) or contact me **KillYoy#0295** on Discord.
