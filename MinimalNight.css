@@ -1,10 +1,11 @@
 /**
  * @name MinimalNight
- * @version 8.15.26
- * @description Dark and compact theme for Discord. Fork of github.com/KillYoy/DiscordNight
+ * @version 1.0.6
+ * @description Dark/Night and Minimalist Theme for Discord
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
- * @author @dka & gold_me
+ * @author dka
+ * @author gold-me
 */
 
 :root {
@@ -3160,7 +3161,7 @@
 .clipContainer_b11c5e .replyBar_b11c5e .name_b11c5e {
 	color: #FFFFFF;
 }
-.clipContainer_b11c5e replyBar_b11c5e .closeIcon_b11c5e {
+.clipContainer_b11c5e replyBar_b11c5e .closeIcon_cb4d21 {
 	opacity: .6;
 }
 /* Replying Container: Thread Suggestion Bar */
@@ -4110,23 +4111,23 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 }
 
 /* Uploaded File Download/Remove Button */
-.messageAttachment__5dae1 .hoverButtonGroup_e5c1dc {
+.messageAttachment__5dae1 .hoverButtonGroup_d0395d {
 	background-color: rgba(0,0,0,0.6);
 	border-radius: 0px 3px 0px 5px;
 	top: 0px; /* 2px */
 	right: 0px; /* 4px */
 }
-.messageAttachment__5dae1 .hoverButtonGroup_e5c1dc .hoverButton_be4802 {
+.messageAttachment__5dae1 .hoverButtonGroup_d0395d .hoverButton_be4802 {
 	color: #E5E5E5;
 }
-.messageAttachment__5dae1 .hoverButtonGroup_e5c1dc .hoverButton_be4802:hover[aria-label="Download"] {
+.messageAttachment__5dae1 .hoverButtonGroup_d0395d .hoverButton_be4802:hover[aria-label="Download"] {
 	background-color: var(--bd-blue);
 	color: #FFFFFF;
 }
-.messageAttachment__5dae1 .hoverButtonGroup_e5c1dc .hoverButton_be4802 .removeAttachmentHoverButton__161a2 {
+.messageAttachment__5dae1 .hoverButtonGroup_d0395d .hoverButton_be4802 .removeAttachmentHoverButton__161a2 {
 	border-radius: 0px 3px 0px 0px;
 }
-.messageAttachment__5dae1 .hoverButtonGroup_e5c1dc .hoverButton_be4802:hover.removeAttachmentHoverButton__161a2 {
+.messageAttachment__5dae1 .hoverButtonGroup_d0395d .hoverButton_be4802:hover.removeAttachmentHoverButton__161a2 {
 	background-color: var(--status-danger-background);
 	color: #FFFFFF;
 }
