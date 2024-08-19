@@ -1,17 +1,17 @@
 # Fork of the [**DiscordNight**](https://github.com/KillYoy/DiscordNight) made by KillYoy.
 ## Some visual changes were made as an attempt to restore visuals broken with newer updates.
 
-![](https://i.imgur.com/XQApc9q.png)
+![](https://i.imgur.com/Ov1iSAp.png)
 
 Requires the [**Discord**](https://discordapp.com/) desktop app with [**BetterDiscord**](https://betterdiscord.app/) or [**Vencord**](https://vencord.dev) installed (Or any other Discord client mod that supports themes).
 
 ### [**BetterDiscord**](https://betterdiscord.app/):  
-- Download [**DiscordNight.theme.css**](https://betterdiscord.app/Download?id=155) and navigate to **Settings > Themes** and click **Open Themes Folder** or place the file in **%appdata%/BetterDiscord/themes** and then enable **DiscordNight**.  
+- Download [**MinimalNight.theme.css**](https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.theme.css) and navigate to **Settings > Themes** and click **Open Themes Folder** or place the file in **%appdata%/BetterDiscord/themes** and then enable **MinimalNight**.  
 If the theme does not show up refresh Discord using **CTRL+R** or restart Discord.
 
 ### [**Vencord**](https://vencord.dev):  
 - ***Method 1***: 
-	- Download [**DiscordNight.theme.css**](https://betterdiscord.app/Download?id=155) and navigate to **Settings > Themes** and click **Open Themes Folder** or place the file in **%appdata%/Vencord/themes** and then enable **DiscordNight**.    
+	- Download [**MinimalNight.theme.css**](https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.theme.css) and navigate to **Settings > Themes** and click **Open Themes Folder** or place the file in **%appdata%/Vencord/themes** and then enable **MinimalNight**.    
 - ***Method 2***: 
 	- Navigate to **Settings > Themes** and go to **Online Themes** tab and in the input field paste in this URL:  
 ```https://raw.githubusercontent.com/MonolithOrchids/MinimalNightTheme/master/MinimalNight.theme.css```
@@ -20,22 +20,15 @@ If the theme does not show up refresh Discord using **CTRL+R** or restart Discor
 
 - **Dark Theme** needs to be enabled in **Settings > Appearance > Theme** and select **Dark**.
 
-Keep in mind that things may break at any time because of Discords background updates which may cause you to have to reinstall BetterDiscord or wait for the theme to be updated.  
-In case there is anything that has not yet been fixed or any plugin related issues feel free to either make a new [issue](https://github.com/KillYoy/DiscordNight/issues/new) or contact me **KillYoy#0295** on Discord.
-
 # Preview
 
-A comparison with and without the theme enabled in BetterDiscord (Images are slightly outdated)
-
-![Main window comparison](https://i.imgur.com/fkQM8JW.png)
-Matching colored underlines for member list roles requires the [**BetterRoleColors**](https://github.com/rauenzi/BetterDiscordAddons/tree/master/Plugins/BetterRoleColors) plugin.  
-The theme supports [**USRBG**](https://github.com/Discord-Custom-Covers/usrbg) by [**Tropical**](https://github.com/Tropix126).
-
-![Settings comparison](https://i.imgur.com/5f6BjrR.png)
+![Main window](https://i.imgur.com/JuPRJIi.png)
+# 
+![Settings comparison](https://i.imgur.com/DDSlClq.png)
 
 # Customizing the theme
 
-DiscordNight has certain unique variables that can easily be modified to change the visibility and width of certain elements. The code can either be added to the **DiscordNight.theme.css** or the **Custom CSS** menu in Discord settings:
+MinimalNight has certain unique variables that can easily be modified to change the visibility and width of certain elements. The code can either be added to the **MinimalNight.theme.css** or the **Custom CSS** menu in Discord settings:
 
 ```css
 :root {
@@ -87,7 +80,7 @@ DiscordNight has certain unique variables that can easily be modified to change 
 
 ## Want certain things to look like they normally do in Discord?
 I have made some import addons which changes certain aspects of the theme.   
-You can change the **Server list message notice** and **Chat file attachment button** back to their original appearance by adding either of these two lines of code to your **DiscordNight.theme.css**
+You can change the **Server list message notice** and **Chat file attachment button** back to their original appearance by adding either of these two lines of code to your **MinimalNight.theme.css**
 
 ```css 
 @import url("https://raw.githubusercontent.com/MonolithOrchids/MinimalNightTheme/master/Addons/Vanilla_ServerList_Message_Notice.theme.css"); 
@@ -96,10 +89,6 @@ You can change the **Server list message notice** and **Chat file attachment but
 @import url("https://raw.githubusercontent.com/MonolithOrchids/MinimalNightTheme/master/Addons/Vanilla_Attachment_Button.theme.css"); 
 ```
 
-# Installing DiscordNight without client mods (Not recommended)
-
-- If you don't want to use BetterDiscord or it does not work for some reason the CSS can be injected using Discords developer tools using **Ctrl+Shift+I** in the Desktop app or **F12** in the browser. In the **Sources** tab go click on **assets** and find the file that ends with **.css** and paste in the code from **DiscordNight.css** into it, if done correctly the theme should be loaded until the next time Discord restarts (Keep in mind that images loaded from an external address will not load this way).
-
 ## Installing DiscordNight to your internet browser
 
-- By using a stylesheet addon like Stylus, you can create a style for **discordapp.com** and paste in the code from **DiscordNight.css** (Not everything will work correctly like scrollbars and external images)
+- By using a stylesheet addon like Stylus, you can create a style for **discordapp.com** and paste in the code from **MinimalNight.css** (Not everything will work correctly like scrollbars and external images)
