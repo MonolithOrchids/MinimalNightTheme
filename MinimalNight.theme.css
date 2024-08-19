@@ -1,8 +1,13 @@
 /**
  * @name MinimalNight
- * @version 8.15.26
- * @description Dark and compact theme for Discord. Fork of github.com/KillYoy/DiscordNight
- * @author @dka & gold_me
+ * @version 1.0.6
+ * @description Dark/Night and Minimalist Theme for Discord
+ * @author dka
+ * @author gold-me
 */
 
 @import url("https://raw.githubusercontent.com/MonolithOrchids/MinimalNightTheme/master/MinimalNight.css");
+
+/* Remove /* if you want those buttons back to their original appearance */
+/* @import url("https://raw.githubusercontent.com/MonolithOrchids/MinimalNightTheme/master/Addons/Vanilla_ServerList_Message_Notice.theme.css");
+/* @import url("https://raw.githubusercontent.com/MonolithOrchids/MinimalNightTheme/master/Addons/Vanilla_Attachment_Button.theme.css");
