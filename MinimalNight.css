@@ -3121,7 +3121,7 @@
 .channelTextArea_d5deea .scrollableContainer_d0696b {
 	background: var(--bg-overlay-1, var(--background-secondary-alt));
 	border-radius: 0px;
-	padding: 2px 2px 2px 4px;
+	padding: 2px -1px 2px 4px;
 }
 .channelTextArea_a7d72e .wrapper_f9f2ca .scrollableContainer_d0696b {
 	border-radius: 4px;
