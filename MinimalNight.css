@@ -3121,7 +3121,7 @@
 .channelTextArea_d5deea .scrollableContainer_d0696b {
 	background: var(--bg-overlay-1, var(--background-secondary-alt));
 	border-radius: 0px;
-	padding: 2px -1px 2px 4px;
+	padding: 2px 2px 2px 4px;
 }
 .channelTextArea_a7d72e .wrapper_f9f2ca .scrollableContainer_d0696b {
 	border-radius: 4px;
@@ -3360,7 +3360,7 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 	opacity: 0.3;
 }
 .channelTextArea_a7d72e .emojiButton_d91a75.emojiButtonHovered_d91a75 {
-	transform: scale(1.14);
+	transform: none;
 	opacity: 1 !important;
 }
 /* Emoji & Extra Buttons */
@@ -3372,7 +3372,7 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 .channelTextArea_a7d72e .expression-picker-chat-input-button .button_dd4f85:hover,
 .channelTextArea_a7d72e .expression-picker-chat-input-button .active_f9af59.button_dd4f85,
 .channelTextArea_a7d72e .buttons_d0696b button[aria-label*="Send a gift"]:hover {
-	transform: scale(1.14);
+	transform: none;
 	opacity: 1;
 }
 /* Extra Buttons */
