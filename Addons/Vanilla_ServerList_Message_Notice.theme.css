@@ -1,18 +1,18 @@
 //META{"name":"MinimalNight | Vanilla Serverlist Notices","description":"Reverts the serverlist message notices to the default Discord look","OriginalAuthor":"KillYoy#0295","authorId":"98468214824001536"}*//{}
 
 /* Server Message Notice */
-.wrapper_cbf230 .listItem_bba834 .item_f5370e {
+.wrapper_fea3ef .listItem_c96c45 .item_c4cd66 {
 	background: #FFFFFF !important;
 	border-radius: 0px 4px 4px 0px !important;
 	width: 8px !important;
 	min-height: 0px !important;
 }
-.wrapper_cbf230 .listItem_bba834:hover .item_f5370e,
-.wrapper_cbf230 .listItem_bba834 .item_f5370e[style*="opacity: 1; height: 8px"],
-.wrapper_cbf230 .listItem_bba834 .item_f5370e[style*="opacity: 1; height: 40px"],
-.wrapper_cbf230 .listItem_bba834 .bd-unread .item_f5370e,
-.wrapper_cbf230 .listItem_bba834 .bd-hovered .item_f5370e,
-.wrapper_cbf230 .listItem_bba834 .bd-selected .item_f5370e,
-.wrapper_cbf230 .listItem_bba834 .bd-unread.bd-hovered:not(.bd-selected) .item_f5370e {
+.wrapper_fea3ef .listItem_c96c45:hover .item_c4cd66,
+.wrapper_fea3ef .listItem_c96c45 .item_c4cd66[style*="opacity: 1; height: 8px"],
+.wrapper_fea3ef .listItem_c96c45 .item_c4cd66[style*="opacity: 1; height: 40px"],
+.wrapper_fea3ef .listItem_c96c45 .bd-unread .item_c4cd66,
+.wrapper_fea3ef .listItem_c96c45 .bd-hovered .item_c4cd66,
+.wrapper_fea3ef .listItem_c96c45 .bd-selected .item_c4cd66,
+.wrapper_fea3ef .listItem_c96c45 .bd-unread.bd-hovered:not(.bd-selected) .item_c4cd66 {
 	background: #FFFFFF !important;
 }
