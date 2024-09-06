@@ -22,7 +22,7 @@ If the theme does not show up refresh Discord using **CTRL+R** or restart Discor
 
 # Preview
 
-![Main window](https://i.imgur.com/JuPRJIi.png)
+![Main window](https://i.imgur.com/wzOZXtE.png)
 # 
 ![Settings comparison](https://i.imgur.com/DDSlClq.png)
 
@@ -75,6 +75,8 @@ MinimalNight has certain unique variables that can easily be modified to change 
     --Friends-List-Searchbar: none;                      /* flex = ON, none = OFF */
 	
     --Titlebar-Help-Icon: none;                          /* flex = ON, none = OFF */
+
+    --Activity-Status: flex;                             /* flex = ON, none = OFF */
 }
 ```
 
