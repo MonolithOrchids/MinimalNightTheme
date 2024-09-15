@@ -2854,6 +2854,8 @@
 .jumpToPresentBar_cf58b5 {
 	background-color: #1B1B1B;
 	opacity: .95;
+	right: 0px;
+	left: 0px;
 }
 .jumpToPresentBar_cf58b5:hover {
 	background-color: #212121;
