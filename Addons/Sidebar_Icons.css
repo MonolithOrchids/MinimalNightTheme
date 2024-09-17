@@ -1,13 +1,3 @@
-/**
- * @name MinimalNight Icons
- * @description Literally just the icons part of the theme. Here for ease of access.
- * @source https://github.com/MonolithOrchids/MinimalNightTheme/
- * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
- * @version 1.1.2
- * @author gold_me
- * @author dka
- */
-
 /* DEFINITIONS */
 @property --si-show {
     syntax: "show | hide";
@@ -419,55 +409,60 @@
   [class^=standardSidebarView_] {
       /* Padding and Icons */
       [class^=sidebarRegionScroller_] [class*="item"]{
-      padding: calc((32px - var(--si-size)) / 2) calc((32px - var(--si-size)) / 2);
+        padding: calc((32px - var(--si-size)) / 2) calc((32px - var(--si-size)) / 2);
       }
       [class^=sidebarRegionScroller_] [class*="item"]::before {
-      content: "";
-      float: left;
-      width: var(--si-size);
-      height: var(--si-size);
-      margin-right: 8px;
-      opacity: .5;
-      transition: 160ms;
-      mask: var(--si-Default) center/contain no-repeat;
-      background: currentColor !important;
+        content: "";
+        float: left;
+        width: var(--si-size);
+        height: var(--si-size);
+        margin-right: 8px;
+        opacity: .5;
+        transition: 160ms;
+        mask: var(--si-Default) center/contain no-repeat;
+        background: currentColor !important;
       }
       [class^=sidebarRegionScroller_] [class*="item"] {
-      line-height: var(--si-size);
+        line-height: var(--si-size);
       }
       [class^=sidebarRegionScroller_] [class^=item_] .dot-2s_oHI {
-      background-color: var(--bd-blue);
+        background-color: var(--bd-blue);
       }
       [class^=sidebarRegionScroller_] [class*="item"]:hover::before {
-      opacity: .7;
+        opacity: .7;
       }
       [class^=sidebarRegionScroller_] [class*="item"][class*="selected"]::before {
-      opacity: 1;
+        opacity: 1;
       }
       /* Button Hover & Animations */
-      @container style(--si-animations: true) {
-      [class^=sidebar_] [class^=side_] [class*="item"] {
-      border-radius: 4px 0px 0px 4px;
-      transform: translateZ(0);
-      transition: 220ms;
-      padding-top: 4px !important;
-      padding-bottom: 4px !important;
-      }
-      [class^=sidebar_] [class^=side_] [class*=item_]:hover,
-      [class^=sidebar_] [class^=side_] .selected_a0[class^=item_] {
-      transform: translateX(8px);
-      transition: 160ms;
-      }
-      }
-      /* Icons Expansion */
-      @container style(--si-expand: true) {
-      [class^=sidebar_] [class^=side_] [class*=item_]:hover,
-      [class^=side_] .selected_a0[class*=item_]
-      {
-      min-width: calc(var(--custom-standard-sidebar-view-sidebar-content-width) + (var(--si-size) * (1 + (1 / 3))));
-      margin-left: calc(-1 * var(--si-size) * (1 + (1 / 3)));
-      }
-      }
+    @container style(--si-animations: true) {
+        [class^=sidebar_] [class^=side_] [class*="item"] {
+            border-radius: 4px 0px 0px 4px;
+            transform: translateZ(0);
+            transition: 220ms;
+            padding-top: 4px !important;
+            padding-bottom: 4px !important;
+        }
+        [class^=sidebar_] [class^=side_] [class*=item_]:hover,
+        [class^=sidebar_] [class^=side_] .selected_a0[class^=item_] {
+            transform: translateX(8px);
+            transition: 160ms;
+        }
+        }
+        /* Icons Expansion */
+        @container style(--si-expand: true) {
+        [class^=sidebar_] [class^=side_] [class*=item_]:hover,
+        [class^=side_] .selected_a0[class*=item_]
+        {
+            min-width: calc(var(--custom-standard-sidebar-view-sidebar-content-width) + (var(--si-size) * (1 + (1 / 3))));
+            margin-left: calc(-1 * var(--si-size) * (1 + (1 / 3)));
+        }
+    }
+
+    /* Misc .Fixes */
+    [class^=serverBoostTabItem_][aria-selected=true] {
+	    background-color: var(--background-modifier-selected) !important;
+    }
   }
   
   
@@ -484,54 +479,54 @@
       [class^=item_][data-tab-id="DELETE" i] [class^="tabBarItemContainer_"] svg,
       [class^=item_][data-tab-id="logout"] [class^="tabBarItemContainer_"] svg
       {
-      display: none;
+        display: none;
       }
   
       /*		User Settings		*/
       /* Settings: My Account */
       [class^=item_][data-tab-id="My Account" i]::before
       {
-      mask: var(--si-MyAccount) center/contain no-repeat;
+        mask: var(--si-MyAccount) center/contain no-repeat;
       }
       /* Settings: Profiles */
       [class^=item_][data-tab-id="Profile Customization" i]::before
       {
-      mask: var(--si-ProfileCustomization) center/contain no-repeat;
+        mask: var(--si-ProfileCustomization) center/contain no-repeat;
       }
       /* Settings: Privacy & Safety */
       [class^=item_][data-tab-id="Privacy & Safety" i]::before
       {
-      mask: var(--si-PrivacySafety) center/contain no-repeat;
+        mask: var(--si-PrivacySafety) center/contain no-repeat;
       }
       /* Settings: Family Center */
       [class^=item_][data-tab-id="Family Center" i]::before
       {
-      mask: var(--si-FamilyCenter) center/contain no-repeat;
+        mask: var(--si-FamilyCenter) center/contain no-repeat;
       }
       /* Settings: Authorized Apps */
       [class^=item_][data-tab-id="Authorized Apps" i]::before
       {
-      mask: var(--si-AuthorizedApps) center/contain no-repeat;
+        mask: var(--si-AuthorizedApps) center/contain no-repeat;
       }
       /* Settings: Devices */
       [class^=item_][data-tab-id="Sessions" i]::before
       {
-      mask: var(--si-Devices) center/contain no-repeat;
+        mask: var(--si-Devices) center/contain no-repeat;
       }
       /* Settings: Connections */
       [class^=item_][data-tab-id="Connections" i]::before
       {
-      mask: var(--si-Connections) center/contain no-repeat;
+        mask: var(--si-Connections) center/contain no-repeat;
       }
       /* Settings: Clips */
       [class^=item_][data-tab-id="Settings Clips" i]::before
       {
-      mask: var(--si-Clips) center/contain no-repeat;
+        mask: var(--si-Clips) center/contain no-repeat;
       }
       /* Settings: Friend Requests */
       [class^=item_][data-tab-id="Friend Requests" i]::before
       {
-      mask: var(--si-FriendRequests) center/contain no-repeat;
+        mask: var(--si-FriendRequests) center/contain no-repeat;
       }
   
       /*		Billing Settings		*/
@@ -539,37 +534,37 @@
       /* Settings: Discord Nitro */
       [aria-label="User Settings"][class^=side_] [class*=item_][data-tab-id="Discord Nitro" i]::before
       {
-      mask: var(--si-Nitro) center/contain no-repeat;
+        mask: var(--si-Nitro) center/contain no-repeat;
       }
       [aria-label="User Settings"][class^=side_] [class*=item_][data-tab-id="Discord Nitro" i]:hover::before,
       [aria-label="User Settings"][class^=side_] .selected_a0[class*=item_][data-tab-id="Discord Nitro" i]::before
       {
-      background-color: var(--brand-500) !important;
+        background-color: var(--brand-500) !important;
       }
       /* Settings: Server Boost */
       [aria-label="User Settings"][class^=side_] [class*=item_][data-tab-id="Nitro Server Boost" i]::before
       {
-      mask: var(--si-ServerBoost) center/contain no-repeat;
+        mask: var(--si-ServerBoost) center/contain no-repeat;
       }
       [aria-label="User Settings"][class^=side_] [class*=item_][data-tab-id="Nitro Server Boost" i]:hover::before,
       [aria-label="User Settings"][class^=side_] .selected_a0[class*=item_][data-tab-id="Nitro Server Boost" i]::before
       {
-      background-color: var(--guild-boosting-pink) !important;
+        background-color: var(--guild-boosting-pink) !important;
       }
       /* Settings: Subscriptions */
       [class^=item_][data-tab-id="Subscriptions" i]::before
       {
-      mask: var(--si-Subscriptions) center/contain no-repeat;
+        mask: var(--si-Subscriptions) center/contain no-repeat;
       }
       /* Settings: Gift Inventory */
       [class^=item_][data-tab-id="Library Inventory" i]::before
       {
-      mask: var(--si-Gifts) center/contain no-repeat;
+        mask: var(--si-Gifts) center/contain no-repeat;
       }
       /* Settings: Billing */
       [class^=item_][data-tab-id="Billing" i]::before
       {
-      mask: var(--si-Billing) center/contain no-repeat;
+        mask: var(--si-Billing) center/contain no-repeat;
       }
   
       /*		App Settings		*/
@@ -577,17 +572,17 @@
       /* Settings: Appearance */
       [class^=item_][data-tab-id="Appearance" i]::before
       {
-      mask: var(--si-Appearance) center/contain no-repeat;
+        mask: var(--si-Appearance) center/contain no-repeat;
       }
       /* Settings: Appearance */
       [class^=item_][data-tab-id="Accessibility" i]::before
       {
-      mask: var(--si-Accessibility) center/contain no-repeat;
+        mask: var(--si-Accessibility) center/contain no-repeat;
       }
       /* Settings: Voice & Video */
       [class^=item_][data-tab-id="Voice & Video" i]::before
       {
-      mask: var(--si-VoiceVideo) center/contain no-repeat;
+        mask: var(--si-VoiceVideo) center/contain no-repeat;
       }
       /* Settings: Chat */
       [class^=item_][data-tab-id="Text & Images" i]::before
@@ -597,151 +592,151 @@
       /* Settings: Notifications */
       [class^=item_][data-tab-id="Notifications" i]::before
       {
-      mask: var(--si-Notifications) center/contain no-repeat;
+        mask: var(--si-Notifications) center/contain no-repeat;
       }
       /* Settings: Keybinds */
       [class^=item_][data-tab-id="Keybinds" i]::before
       {
-      mask: var(--si-Keybinds) center/contain no-repeat;
+        mask: var(--si-Keybinds) center/contain no-repeat;
       }
       /* Settings: Language */
       [class^=item_][data-tab-id="Language" i]::before
       {
-      mask: var(--si-Language) center/contain no-repeat;
+        mask: var(--si-Language) center/contain no-repeat;
       }
       /* Settings: Windows Settings */
       [class^=item_][data-tab-id="Windows" i]::before
       {
-      mask: var(--si-Windows) center/contain no-repeat;
+        mask: var(--si-Windows) center/contain no-repeat;
       }
       /* Settings: Linux Settings */
       [class^=item_][data-tab-id="Linux" i]::before
       {
-      mask: var(--si-Linux) center/contain no-repeat;
+        mask: var(--si-Linux) center/contain no-repeat;
       }
       /* Settings: Streamer Mode */
       [class^=item_][data-tab-id="Streamer Mode" i]::before
       {
-      mask: var(--si-Streaming) center/contain no-repeat;
+        mask: var(--si-Streaming) center/contain no-repeat;
       }
       /* Settings: Streamer Mode */
       [class^=item_][data-tab-id="Advanced" i]::before
       {
-      mask: var(--si-Advanced) center/contain no-repeat;
+        mask: var(--si-Advanced) center/contain no-repeat;
       }
   
       /* Settings: Vencord Icons */
       [class*=item_][data-tab-id="VencordSettings" i]::before {
-      mask: var(--si-Vencord) center/contain no-repeat;
+        mask: var(--si-Vencord) center/contain no-repeat;
       }
       [class*=item_][data-tab-id="VencordPlugins" i]::before {
-      mask: var(--si-Plugins) center/contain no-repeat;
+        mask: var(--si-Plugins) center/contain no-repeat;
       }
       [class*=item_][data-tab-id="VencordThemes" i]::before {
-      mask: var(--si-Themes) center/contain no-repeat;
+        mask: var(--si-Themes) center/contain no-repeat;
       }
       [class*=item_][data-tab-id="VencordUpdater" i]::before {
-      mask: var(--si-Updater) center/contain no-repeat;
+        mask: var(--si-Updater) center/contain no-repeat;
       }
       [class*=item_][data-tab-id="VencordCloud" i]::before {
-      mask: var(--si-Cloud) center/contain no-repeat;
+        mask: var(--si-Cloud) center/contain no-repeat;
       }
       [class*=item_][data-tab-id="VencordSettingsSync" i]::before {
-      mask: var(--si-BackupRestore) center/contain no-repeat;
+        mask: var(--si-BackupRestore) center/contain no-repeat;
       }
   
       /*    Activity Settings    */
       /* Settings: Activity Privacy */
       [class^=item_][data-tab-id="Activity Privacy" i]::before
       {
-      mask: var(--si-ActivityPrivacy) center/contain no-repeat;
+        mask: var(--si-ActivityPrivacy) center/contain no-repeat;
       }
       /* Settings: Registered Games */
       [class^=item_][data-tab-id="Game Activity" i]::before
       {
-      mask: var(--si-GameActivity) center/contain no-repeat;
+        mask: var(--si-GameActivity) center/contain no-repeat;
       }
       /* Settings: Overlay */
       [class^=item_][data-tab-id="Overlay" i]::before
       {
-      mask: var(--si-Overlay) center/contain no-repeat;
+        mask: var(--si-Overlay) center/contain no-repeat;
       }
   
       /*      Misc Settings       */
       /* Settings: What's New */
       [class^=item_][data-tab-id="changelog" i]::before
       {
-      mask: var(--si-Changelog) center/contain no-repeat;
+        mask: var(--si-Changelog) center/contain no-repeat;
       }
       /* Settings: Merch */
       [class^=item_][data-tab-id="merchandise" i]::before
       {
-      mask: var(--si-Merch) center/contain no-repeat;
+        mask: var(--si-Merch) center/contain no-repeat;
       }
       /* Settings: HypeSquad */
       [class^=item_][data-tab-id="Hypesquad Online" i]::before
       {
-      mask: var(--si-HypeSquad) center/contain no-repeat;
+        mask: var(--si-HypeSquad) center/contain no-repeat;
       }
       /* Settings: Experiments */
       [class^=item_][data-tab-id="Experiments" i]::before
       {
-      mask: var(--si-Experiments) center/contain no-repeat;
+        mask: var(--si-Experiments) center/contain no-repeat;
       }
       /* Settings: Developer Options */
       [class^=item_][data-tab-id="Developer Options" i]::before
       {
-      mask: var(--si-DeveloperOptions) center/contain no-repeat;
+        mask: var(--si-DeveloperOptions) center/contain no-repeat;
       }
       /* Settings: Hotspot Options */
       [class^=item_][data-tab-id="Hotspot Options" i]::before
       {
-      mask: var(--si-HotspotOptions) center/contain no-repeat;
+        mask: var(--si-HotspotOptions) center/contain no-repeat;
       }
       /* Settings: Dismissible Contents */
       [class^=item_][data-tab-id="Dismissible Content Options" i]::before
       {
-      mask: var(--si-DismissibleConents) center/contain no-repeat;
+        mask: var(--si-DismissibleConents) center/contain no-repeat;
       }
       /* Settings: Payment Flow Modals */
       [class^=item_][data-tab-id="Payment Flow Modals" i]::before
       {
-      mask: var(--si-PaymentFlowModals) center/contain no-repeat;
+        mask: var(--si-PaymentFlowModals) center/contain no-repeat;
       }
       /* Settings: Design Systems */
       [class^=item_][data-tab-id="Design System" i]::before
       {
-      mask: var(--si-DesignSystems) center/contain no-repeat;
+        mask: var(--si-DesignSystems) center/contain no-repeat;
       }
       /* Settings: Text Playground */
       [class^=item_][data-tab-id="Text Playground" i]::before
       {
-      mask: var(--si-TextPlayground) center/contain no-repeat;
+        mask: var(--si-TextPlayground) center/contain no-repeat;
       }
       /* Settings: Text Components */
       [class^=item_][data-tab-id="Text Component" i]::before
       {
-      mask: var(--si-TextComponents) center/contain no-repeat;
+        mask: var(--si-TextComponents) center/contain no-repeat;
       }
       /* Settings: Intl Testing */
       [class^=item_][data-tab-id="Intl Testing" i]::before
       {
-      mask: var(--si-IntlTesting) center/contain no-repeat;
+        mask: var(--si-IntlTesting) center/contain no-repeat;
       }
       /* Settings: Profile Effects Preview Tool */
       [class^=item_][data-tab-id="Profile Effects Preview Tool" i]::before
       {
-      mask: var(--si-ProfileEffectsPreview) center/contain no-repeat;
+        mask: var(--si-ProfileEffectsPreview) center/contain no-repeat;
       }
       /* Settings: Web Setting Tree Tool */
       [class^=item_][data-tab-id="Web Setting Tree Tool" i]::before
       {
-      mask: var(--si-WebSettingTreeTool) center/contain no-repeat;
+        mask: var(--si-WebSettingTreeTool) center/contain no-repeat;
       }
       /* Log Out */
       [class^=item_][data-tab-id="logout"]::before
       {
-      mask: var(--si-Logout) center/contain no-repeat;
+        mask: var(--si-Logout) center/contain no-repeat;
       }
   
       /*      SERVER ICONS        */
@@ -749,54 +744,54 @@
       /* Server: Overview */
       [class^=item_][data-tab-id="OVERVIEW"]::before
       {
-      mask: var(--si-Overview) center/contain no-repeat;
+        mask: var(--si-Overview) center/contain no-repeat;
       }
       /* Server: Roles */
       [class^=item_][data-tab-id="ROLES"]::before
       {
-      mask: var(--si-Roles) center/contain no-repeat;
+        mask: var(--si-Roles) center/contain no-repeat;
       }
       /* Server: Emoji */
       [class^=item_][data-tab-id="EMOJI"]::before
       {
-      mask: var(--si-Emoji) center/contain no-repeat;
+        mask: var(--si-Emoji) center/contain no-repeat;
       }
       /* Server: Stickers */
       [class^=item_][data-tab-id="STICKERS"]::before
       {
-      mask: var(--si-Stickers) center/contain no-repeat;
+        mask: var(--si-Stickers) center/contain no-repeat;
       }
       /* Server: Soundboard */
       [class^=item_][data-tab-id="SOUNDBOARD"]::before
       {
-      mask: var(--si-Soundboard) center/contain no-repeat;
+        mask: var(--si-Soundboard) center/contain no-repeat;
       }
       /* Server: Widgets */
       [class^=item_][data-tab-id="WIDGET"]::before
       {
-      mask: var(--si-Widget) center/contain no-repeat;
+        mask: var(--si-Widget) center/contain no-repeat;
       }
       /* Server: Server Template */
       [class^=item_][data-tab-id="GUILD_TEMPLATES"]::before
       {
-      mask: var(--si-Template) center/contain no-repeat;
+        mask: var(--si-Template) center/contain no-repeat;
       }
       /* Server: Custom Invite Link */
       [class^=item_][data-tab-id="VANITY_URL"]::before
       {
-      mask: var(--si-CustomInvite) center/contain no-repeat;
+        mask: var(--si-CustomInvite) center/contain no-repeat;
       }
   
       /*      Apps        */
       /* Server - Apps: Integrations */
       [class^=item_][data-tab-id="INTEGRATIONS"]::before
       {
-      mask: var(--si-Integrations) center/contain no-repeat;
+        mask: var(--si-Integrations) center/contain no-repeat;
       }
       /* Server - Apps: App Directory */
       [class^=item_][data-tab-id="APP_DIRECTORY"]::before
       {
-      mask: var(--si-AppDirectory) center/contain no-repeat;
+        mask: var(--si-AppDirectory) center/contain no-repeat;
       }
   
       /*      Moderation      */
@@ -805,22 +800,22 @@
       [class^=item_][data-tab-id="MODERATION"]::before,
       [class^=item_][data-tab-id="SAFETY"]::before
       {
-      mask: var(--si-SafetySetup) center/contain no-repeat;
+        mask: var(--si-SafetySetup) center/contain no-repeat;
       }
       /* Server - Moderation: AutoMod */
       [class^=item_][data-tab-id="GUILD_AUTOMOD"]::before
       {
-      mask: var(--si-AutoMod) center/contain no-repeat;
+        mask: var(--si-AutoMod) center/contain no-repeat;
       }
       /* Server - Moderation: Audit Log */
       [class^=item_][data-tab-id="AUDIT_LOG"]::before
       {
-      mask: var(--si-AuditLog) center/contain no-repeat;
+        mask: var(--si-AuditLog) center/contain no-repeat;
       }
       /* Server - Moderation: Bans */
       [class^=item_][data-tab-id="BANS"]::before
       {
-      mask: var(--si-Bans) center/contain no-repeat;
+        mask: var(--si-Bans) center/contain no-repeat;
       }
   
       /*      Community       */
@@ -828,34 +823,34 @@
       /* Server - Community: Overview/Enable Community */
       [class^=item_][data-tab-id="COMMUNITY"]::before
       {
-      mask: var(--si-Overview) center/contain no-repeat;
+        mask: var(--si-Overview) center/contain no-repeat;
       }
       /* Server - Community: Onboarding */
       [class^=item_][data-tab-id="ONBOARDING"]::before
       {
-      mask: var(--si-Onboarding) center/contain no-repeat;
+        mask: var(--si-Onboarding) center/contain no-repeat;
       }
       /* Server - Community: Insights */
       [class^=item_][data-tab-id="ANALYTICS"]::before
       {
-      mask: var(--si-Insights) center/contain no-repeat;
+        mask: var(--si-Insights) center/contain no-repeat;
       }
       /* Server - Community: Discovery */
       [class^=item_][data-tab-id="DISCOVERY"]::before
       {
-      mask: var(--si-Discovery) center/contain no-repeat;
+        mask: var(--si-Discovery) center/contain no-repeat;
       }
   
       /*      Monetization       */
       /* Server - Monetization: Server Subscriptions */
       [class^=item_][data-tab-id="ROLE_SUBSCRIPTIONS"]::before
       {
-      mask: var(--si-Subscriptions) center/contain no-repeat;
+        mask: var(--si-Subscriptions) center/contain no-repeat;
       }
       /* Server - Monetization: Server Boost Status */
       [class*=item_][data-tab-id="GUILD_PREMIUM"]::before
       {
-      mask: var(--si-ServerBoost) center/contain no-repeat;
+        mask: var(--si-ServerBoost) center/contain no-repeat;
       }
       [class*=item_][data-tab-id="GUILD_PREMIUM"]:hover::before,
       .selected_a0[class*=item_][data-tab-id="GUILD_PREMIUM"]::before
@@ -868,23 +863,23 @@
       /* Server - User Management: Members */
       [class^=item_][data-tab-id="MEMBERS"]::before
       {
-      mask: var(--si-Members) center/contain no-repeat;
+        mask: var(--si-Members) center/contain no-repeat;
       }
   
       /* Server: Invites */
       [class^=item_][data-tab-id="INSTANT_INVITES"]::before
       {
-      mask: var(--si-Invite) center/contain no-repeat;
+        mask: var(--si-Invite) center/contain no-repeat;
       }
       /* Server: Permissions */
       [class^=item_][data-tab-id="PERMISSIONS"]::before
       {
-      mask: var(--si-Permissions) center/contain no-repeat;
+        mask: var(--si-Permissions) center/contain no-repeat;
       }
       /* Server: Delete Icon */
       [class^=item_][data-tab-id="DELETE"]::before
       {
-      mask: var(--si-Delete) center/contain no-repeat;
+        mask: var(--si-Delete) center/contain no-repeat;
       }
   
   
