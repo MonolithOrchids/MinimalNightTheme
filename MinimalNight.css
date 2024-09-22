@@ -1,15 +1,14 @@
 /**
  * @name MinimalNight
- * @version 1.1.4
+ * @version 1.1.5
  * @description Dark/Night and Minimalist Theme for Discord
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
- * @author dka
- * @author gold-me
+ * @author @dka & gold-me
 */
 
 :root {
-	--Settings-Theme-Version: "MinimalNight v1.1.4";
+	--Settings-Theme-Version: "MinimalNight v1.1.5";
 
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
@@ -62,6 +61,8 @@
 
 	--si-size: 24px; /* Size for sidebar icons (Default: 24px) */
 	--si-animations: true; /* [true/false] Adds sidebar animations (Default: true) */
+	
+	--Edit-Image-with-Apps: none;						/* flex = ON, none = OFF */
 }
 
 :root,
@@ -10068,6 +10069,11 @@ body {
 .mask_c721cc {
     display: none;
 }
+
+/* Remove 'Edit Image with Apps' Button  */
+.hoverButtonGroup_d0395d {
+    display: var(--Edit-Image-with-Apps);
+    }
 
 /********************************************** Vencord **********************************************/
 
