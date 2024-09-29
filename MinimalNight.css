@@ -1,6 +1,6 @@
 /**
  * @name MinimalNight
- * @version 1.1.6
+ * @version 1.1.7
  * @description Dark/Night and Minimalist Theme for Discord
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
@@ -8,61 +8,63 @@
 */
 
 :root {
-	--Settings-Theme-Version: "MinimalNight v1.1.6";
+	--Settings-Theme-Version: "MinimalNight v1.1.7";
 
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
 	--Channel-List-Active-Threads: flex;				/* flex = ON, none = OFF */
 	--Channel-List-Upcoming-Events: flex;				/* flex = ON, none = OFF */
-	--Channel-List-Boost-Goal: block;					/* block = ON, none = OFF */
-	--Channel-List-Width: 200px;						/* 200px, Discord default = 240px */
+	--Channel-List-Boost-Goal: block;				/* block = ON, none = OFF */
+	--Channel-List-Width: 200px;					/* 200px, Discord default = 240px */
 
-	--User-List-Width: 200px;							/* 200px, Discord default = 240px */
-	--User-Popout-Width: 240px;							/* 240px, Discord default = 300px */
-	--User-Status-Popout-Width: var(--Channel-List-Width);/* 240px, Discord default = 300px */
+	--User-List-Width: 200px;					/* 200px, Discord default = 240px */
+	--User-Popout-Width: 240px;					/* 240px, Discord default = 300px */
+	--User-Status-Popout-Width: var(--Channel-List-Width);		/* 240px, Discord default = 300px */
 
-	--Search-List-Width: 488px;							/* 488px, Discord default = 418px */
-	--Inbox-List-Width: 522px;							/* 522px, Discord default = 480px */
+	--Search-List-Width: 488px;					/* 488px, Discord default = 418px */
+	--Inbox-List-Width: 522px;					/* 522px, Discord default = 480px */
 
-	--Emoji-Menu-Height: 612px;							/* 612px or 492px, Discord default = 444px */
+	--Emoji-Menu-Height: 612px;					/* 612px or 492px, Discord default = 444px */
 
-	--Chatbox-Gift-Button: none;						/* flex = ON, none = OFF */
-	--Chatbox-GIF-Button: none;							/* flex = ON, none = OFF */
-	--Chatbox-Stickers-Button: none;					/* flex = ON, none = OFF */
+	--Chatbox-Gift-Button: none;					/* flex = ON, none = OFF */
+	--Chatbox-GIF-Button: none;					/* flex = ON, none = OFF */
+	--Chatbox-Stickers-Button: none;				/* flex = ON, none = OFF */
 
-	--Chat-Emoji-Size: 1.75rem;							/* 1.75rem, Discord default = 1.375rem */
-	--Chat-Emoji-Large-Size: 2rem;						/* 2rem, Discord default = 3rem */
-	--Chat-Sticker-Size: 10rem;							/* 5rem, Discord default = 10rem */
-	--Chat-Super-Reaction-Button: none;					/* flex = ON, none = OFF */
+	--Chat-Emoji-Size: 1.75rem;					/* 1.75rem, Discord default = 1.375rem */
+	--Chat-Emoji-Large-Size: 2rem;					/* 2rem, Discord default = 3rem */
+	--Chat-Sticker-Size: 10rem;					/* 5rem, Discord default = 10rem */
+	--Chat-Super-Reaction-Button: none;				/* flex = ON, none = OFF */
 	--Chat-Wave-To-New-User-Button: flex;				/* flex = ON, none = OFF */
-	--Chat-Wave-To-New-DM-Button: flex;					/* flex = ON, none = OFF */
+	--Chat-Wave-To-New-DM-Button: flex;				/* flex = ON, none = OFF */
 
 	--Text-Channels-Capital-Letter: capitalize;			/* capitalize, none */
 
-	--Voice-Noise-Suppression: flex;					/* flex = ON, none = OFF */
-	--Start-Activities-Button: flex;					/* flex = ON, none = OFF */
+	--Voice-Noise-Suppression: flex;				/* flex = ON, none = OFF */
+	--Start-Activities-Button: flex;				/* flex = ON, none = OFF */
 
-	--Embed-Remove-Button: flex;						/* flex = ON, none = OFF */
+	--Embed-Remove-Button: flex;					/* flex = ON, none = OFF */
 
-	--Context-Menu-Emoji-Toolbar: none;					/* flex = ON, none = OFF */
+	--Context-Menu-Emoji-Toolbar: none;				/* flex = ON, none = OFF */
 
-	--Super-Reaction-Animations: none;					/* flex = ON, none = OFF */
-	--User-Profile-Effects: flex;						/* flex = ON, none = OFF */
+	--Super-Reaction-Animations: none;				/* flex = ON, none = OFF */
+	--User-Profile-Effects: flex;					/* flex = ON, none = OFF */
 
-	--Home-Nitro-Button: none;							/* flex = ON, none = OFF */
-	--Home-Store-Button: none;							/* flex = ON, none = OFF */
+	--Home-Nitro-Button: none;					/* flex = ON, none = OFF */
+	--Home-Store-Button: none;					/* flex = ON, none = OFF */
 	--Home-Direct-Messages-Header: flex;				/* flex = ON, none = OFF */
-	--Home-Close-DM-Button: block;						/* block = ON, none = OFF */
-	--Friends-List-Searchbar: none;						/* flex = ON, none = OFF */
+	--Home-Close-DM-Button: block;					/* block = ON, none = OFF */
+	--Friends-List-Searchbar: none;					/* flex = ON, none = OFF */
 
-	--Titlebar-Help-Icon: none;							/* flex = ON, none = OFF */
+	--Titlebar-Help-Icon: none;					/* flex = ON, none = OFF */
 
-	--Activity-Status: none;						/* flex = ON, none = OFF */
+	--Activity-Status: none;					/* flex = ON, none = OFF */
 
-	--si-size: 24px; /* Size for sidebar icons (Default: 24px) */
-	--si-animations: true; /* [true/false] Adds sidebar animations (Default: true) */
+	--si-size: 24px;						/* Size for sidebar icons (Default: 24px) */
+	--si-animations: true; 						/* [true/false] Adds sidebar animations (Default: true) */
 	
-	--Edit-Image-with-Apps: none;						/* flex = ON, none = OFF */
+	--Edit-Image-with-Apps: none;					/* flex = ON, none = OFF */
+
+	--Reaction-Message-Hover: flex;					/* flex = ON, none = OFF */
 }
 
 :root,
@@ -10074,6 +10076,15 @@ body {
 .hoverButtonGroup_d0395d {
     display: var(--Edit-Image-with-Apps);
     }
+
+/* Remove Reactions when hover on messages  */
+.buttonContainer_f9f2ca {
+[aria-label*="Click to react with"],
+[aria-label*="Click to remove"],
+	.separator_e986d9 {
+	display: var(--Reaction-Message-Hover);
+	}
+}
 
 /********************************************** Vencord **********************************************/
 
