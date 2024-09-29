@@ -77,6 +77,13 @@ MinimalNight has certain unique variables that can easily be modified to change 
     --Titlebar-Help-Icon: none;                          /* flex = ON, none = OFF */
 
     --Activity-Status: flex;                             /* flex = ON, none = OFF */
+
+    --si-size: 24px;					/* Size for sidebar icons (Default: 24px) */
+    --si-animations: true; 				/* [true/false] Adds sidebar animations (Default: true) */
+	
+    --Edit-Image-with-Apps: none;			/* flex = ON, none = OFF */
+
+    --Reaction-Message-Hover: flex;			/* flex = ON, none = OFF */
 }
 ```
 
