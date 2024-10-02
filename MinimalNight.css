@@ -1,6 +1,6 @@
 /**
  * @name MinimalNight
- * @version 1.1.7
+ * @version 1.1.8
  * @description Dark/Night and Minimalist Theme for Discord
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
@@ -8,7 +8,7 @@
 */
 
 :root {
-	--Settings-Theme-Version: "MinimalNight v1.1.7";
+	--Settings-Theme-Version: "MinimalNight v1.1.8";
 
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
@@ -65,6 +65,8 @@
 	--Edit-Image-with-Apps: none;					/* flex = ON, none = OFF */
 
 	--Reaction-Message-Hover: flex;					/* flex = ON, none = OFF */
+
+	--Fixed-Discovery-Button: none;					/* flex = ON, none = OFF */
 }
 
 :root,
@@ -10084,6 +10086,11 @@ body {
 	.separator_e986d9 {
 	display: var(--Reaction-Message-Hover);
 	}
+}
+
+/* Remove Fixed Discovery Button  */
+.footer_aa1bff {
+  display: var(--Fixed-Discovery-Button);
 }
 
 /********************************************** Vencord **********************************************/
