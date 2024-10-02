@@ -84,6 +84,8 @@ MinimalNight has certain unique variables that can easily be modified to change 
     --Edit-Image-with-Apps: none;			/* flex = ON, none = OFF */
 
     --Reaction-Message-Hover: flex;			/* flex = ON, none = OFF */
+
+    --Fixed-Discovery-Button: none;			/* flex = ON, none = OFF */
 }
 ```
 
