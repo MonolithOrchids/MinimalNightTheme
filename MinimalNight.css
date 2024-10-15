@@ -1,6 +1,6 @@
 /**
  * @name MinimalNight
- * @version 1.1.8
+ * @version 1.1.9
  * @description Dark/Night and Minimalist Theme for Discord
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
@@ -8,7 +8,7 @@
 */
 
 :root {
-	--Settings-Theme-Version: "MinimalNight v1.1.8";
+	--Settings-Theme-Version: "MinimalNight v1.1.9";
 
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
@@ -2913,45 +2913,45 @@
 .layer_cd0de5 .container_f1c3d9 .container_b0914a {
 	min-height: 351px;
 }
-.layer_cd0de5 .header_f0cd33 {
+.layer_cd0de5 .header_f0cd33 .header_ac90a2{
 	background-color: #161616;
 	padding: 8px 16px 10px 4px;
 	min-height: 40px;
 	height: 40px;
 }
-.layer_cd0de5 .header_f0cd33 .expandedInboxHeader_f0cd33 {
+.layer_cd0de5 .header_f0cd33 .header_ac90a2 .expandedInboxHeader_f0cd33 {
 	padding-bottom: 0px;
 	display: none;
 }
-.layer_cd0de5 .header_f0cd33 .expandedTabSection_f0cd33 {
+.layer_cd0de5 .header_f0cd33 .header_ac90a2 .expandedTabSection_f0cd33 {
 	margin-left: -11px;
 }
-.layer_cd0de5 .header_f0cd33 .topPill_a0 .item_a0 {
+.layer_cd0de5 .header_f0cd33 .header_ac90a2 .topPill_a0 .item_a0 {
 	margin: 0 6px;
 	padding: 2px 6px;
 }
-.layer_cd0de5 .header_f0cd33 .topPill_a0 .tab_f0cd33 {
+.layer_cd0de5 .header_f0cd33 .header_ac90a2 .topPill_a0 .tab_f0cd33 {
 	border-bottom: 2px solid transparent;
 	border-radius: 4px 4px 1px 1px;
 }
-.layer_cd0de5 .header_f0cd33 .topPill_a0 .tab_f0cd33.active_f0cd33 {
+.layer_cd0de5 .header_f0cd33 .header_ac90a2 .topPill_a0 .tab_f0cd33.active_f0cd33 {
 	background-color: #1C1C1C;
 	border-bottom: 2px solid #FFFFFF !important;
 }
-.layer_cd0de5 .header_f0cd33 .topPill_a0 .tab_f0cd33:hover {
+.layer_cd0de5 .header_f0cd33 .header_ac90a2 .topPill_a0 .tab_f0cd33:hover {
 	background-color: #191919;
 	border-bottom: 2px solid #A5A5A5;
 }
-.layer_cd0de5 .header_f0cd33 .topPill_a0 .tab_f0cd33[aria-label="For You"] {
+.layer_cd0de5 .header_f0cd33 .header_ac90a2 .topPill_a0 .tab_f0cd33[aria-label="For You"] {
 	order: 2;
 }
-.layer_cd0de5 .header_f0cd33 .topPill_a0 .tab_f0cd33:nth-child(1),
-.layer_cd0de5 .header_f0cd33 .topPill_a0 .tab_f0cd33[aria-label="Mentions"] {
+.layer_cd0de5 .header_f0cd33 .header_ac90a2 .topPill_a0 .tab_f0cd33:nth-child(1),
+.layer_cd0de5 .header_f0cd33 .header_ac90a2 .topPill_a0 .tab_f0cd33[aria-label="Mentions"] {
 	order: 1;
 }
 .layer_cd0de5 .tertiary_ad6d80,
-.layer_cd0de5 .header_f0cd33 .secondary__45d4f,
-.layer_cd0de5 .header_f0cd33 .secondary__45d4f:hover,
+.layer_cd0de5 .header_f0cd33 .header_ac90a2 .secondary__45d4f,
+.layer_cd0de5 .header_f0cd33 .header_ac90a2 .secondary__45d4f:hover,
 .layer_cd0de5 .tertiary_ad6d80:hover:not(.disabled__4d064) {
 	background-color: transparent;
 }
