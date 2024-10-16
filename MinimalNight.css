@@ -1,6 +1,6 @@
 /**
  * @name MinimalNight
- * @version 1.1.9
+ * @version 1.2.0
  * @description Dark/Night and Minimalist Theme for Discord
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
@@ -8,7 +8,7 @@
 */
 
 :root {
-	--Settings-Theme-Version: "MinimalNight v1.1.9";
+	--Settings-Theme-Version: "MinimalNight v1.2.0";
 
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
@@ -64,7 +64,7 @@
 	
 	--Edit-Image-with-Apps: none;					/* flex = ON, none = OFF */
 
-	--Reaction-Message-Hover: flex;					/* flex = ON, none = OFF */
+	--Reaction-Forward-Message-Hover: flex;				/* flex = ON, none = OFF */
 
 	--Fixed-Discovery-Button: none;					/* flex = ON, none = OFF */
 }
@@ -10079,12 +10079,13 @@ body {
     display: var(--Edit-Image-with-Apps);
     }
 
-/* Remove Reactions when hover on messages  */
+/* Remove Bloatware (Favorite Reactions and Forward) buttons when hover on messages - Leaving only regular Add Reaction, Reply and More buttons  */
 .buttonContainer_f9f2ca {
 [aria-label*="Click to react with"],
 [aria-label*="Click to remove"],
+[aria-label*="Forward"],
 	.separator_e986d9 {
-	display: var(--Reaction-Message-Hover);
+	display: var(--Bloatware-Message-Hover);
 	}
 }
 
