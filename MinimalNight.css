@@ -10079,13 +10079,13 @@ body {
     display: var(--Edit-Image-with-Apps);
     }
 
-/* Remove Bloatware (Favorite Reactions and Forward) buttons when hover on messages - Leaving only regular Add Reaction, Reply and More buttons  */
+/* Remove Favorite Reactions and Forward buttons when hover on messages - Leaving only regular Add Reaction, Reply and More buttons  */
 .buttonContainer_f9f2ca {
 [aria-label*="Click to react with"],
 [aria-label*="Click to remove"],
 [aria-label*="Forward"],
 	.separator_e986d9 {
-	display: var(--Bloatware-Message-Hover);
+	display: var(--Reaction-Forward-Message-Hover);
 	}
 }
 
