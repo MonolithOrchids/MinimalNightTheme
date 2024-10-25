@@ -1,6 +1,6 @@
 /**
  * @name MinimalNight
- * @version 1.2.0
+ * @version 1.2.1
  * @description Dark/Night and Minimalist Theme for Discord
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
@@ -8,7 +8,7 @@
 */
 
 :root {
-	--Settings-Theme-Version: "MinimalNight v1.2.0";
+	--Settings-Theme-Version: "MinimalNight v1.2.1";
 
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
@@ -3398,11 +3398,11 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 	color: #FFFFFF;
 }
 /* Stickers Button */
-.channelTextArea_a7d72e .buttons_d0696b .stickerButton_d0696b,
+.channelTextArea_a7d72e .buttons_d0696b .stickerButton_bdf0de,
 .channelTextArea_a7d72e .buttons_d0696b button[aria-label="Open sticker picker"] {
 	display: var(--Chatbox-Stickers-Button);
 }
-.channelTextArea_a7d72e .buttons_d0696b .stickerButton_d0696b .stickerIcon__3ceda {
+.channelTextArea_a7d72e .buttons_d0696b .stickerButton_bdf0de .stickerIcon__3ceda {
 	width: 21px !important;
 	height: 21px !important;
 }
@@ -10092,6 +10092,11 @@ body {
 /* Remove Fixed Discovery Button  */
 .footer_aa1bff {
   display: var(--Fixed-Discovery-Button);
+}
+
+/* Remove Halloween Nitro Gift Button */
+.container_efde15 {
+    display: none;
 }
 
 /********************************************** Vencord **********************************************/
