@@ -1,6 +1,6 @@
 /**
  * @name MinimalNight
- * @version 1.2.2
+ * @version 1.2.3
  * @description Dark/Night and Minimalist Theme for Discord
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
@@ -8,7 +8,7 @@
 */
 
 :root {
-	--Settings-Theme-Version: "MinimalNight v1.2.2";
+	--Settings-Theme-Version: "MinimalNight v1.2.3";
 
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
@@ -3129,13 +3129,13 @@
 	border-radius: 0px;
 	margin: 0px;
 }
-.channelTextArea_a7d72e .scrollableContainer_d0696b,
-.channelTextArea_d5deea .scrollableContainer_d0696b {
+.channelTextArea_a7d72e .scrollableContainer_bdf0d,
+.channelTextArea_d5deea .scrollableContainer_bdf0d {
 	background: var(--bg-overlay-1, var(--background-secondary-alt));
 	border-radius: 0px;
 	padding: 2px 2px 2px 4px;
 }
-.channelTextArea_a7d72e .wrapper_f9f2ca .scrollableContainer_d0696b {
+.channelTextArea_a7d72e .wrapper_f9f2ca .scrollableContainer_bdf0d {
 	border-radius: 4px;
 	max-width: 94%;
 }
@@ -3143,7 +3143,7 @@
 	padding: 0px;
 }
 /* Chat Box Overflow Scrollbar */
-.channelTextArea_a7d72e .scrollableContainer_d0696b::-webkit-scrollbar-thumb {
+.channelTextArea_a7d72e .scrollableContainer_bdf0d::-webkit-scrollbar-thumb {
 	background-color: #141414;
 }
 /* Chat Box: Send Longer Messages With Discord Nitro */
@@ -3209,7 +3209,7 @@
 }
 
 /* Sticker Preview Container */
-.scrollableContainer_d0696b .stickerPreviews_ef287f {
+.scrollableContainer_bdf0d .stickerPreviews_ef287f {
 	padding: 4px 0 4px 0px;
 }
 /* Sticker In Chat */
@@ -3226,26 +3226,26 @@
 	border-top: 8px solid #212121;
 }
 /* Chat Box: Formatting & Size Fixes */
-.channelTextArea_a7d72e .textArea_d0696b .slateTextArea_e52116 {
+.channelTextArea_a7d72e .textArea_bdf0de .slateTextArea_e52116 {
 	font-size: 0.9375em
 }
-.channelTextArea_a7d72e .textArea_d0696b .placeholder_a552a6 {
+.channelTextArea_a7d72e .textArea_bdf0de .placeholder_a552a6 {
 	color: var(--text-muted);
 }
-.channelTextArea_a7d72e .textArea_d0696b .after_inlineCode-WydEur, 
-.channelTextArea_a7d72e .textArea_d0696b .before_inlineCode-xn8Llh, 
-.channelTextArea_a7d72e .textArea_d0696b .inlineCode-2auMQi {
+.channelTextArea_a7d72e .textArea_bdf0de .after_inlineCode-WydEur, 
+.channelTextArea_a7d72e .textArea_bdf0de .before_inlineCode-xn8Llh, 
+.channelTextArea_a7d72e .textArea_bdf0de .inlineCode-2auMQi {
 	background-color: #212121;
 }
-.channelTextArea_a7d72e .textArea_d0696b .blockquoteContainer_f8f345 {
+.channelTextArea_a7d72e .textArea_bdf0de .blockquoteContainer_f8f345 {
 	margin: -3px 0 -3px;
 }
-.channelTextArea_a7d72e .textArea_d0696b .markup_f8f345 .emoji {
+.channelTextArea_a7d72e .textArea_bdf0de .markup_f8f345 .emoji {
 	height: 1.375rem;
 	width: 1.375rem;
 }
 /* Chat Box: No Attachments Allowed */
-.channelTextArea_a7d72e .sansAttachButton_d0696b {
+.channelTextArea_a7d72e .sansattachButton_bdf0de {
 	padding-left: 0px;
 }
 /* Chat Box: Inline Attachments */
@@ -3329,7 +3329,7 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 }
 
 /* Chat Box Buttons */
-.channelTextArea_a7d72e .scrollableContainer_d0696b {
+.channelTextArea_a7d72e .scrollableContainer_bdf0d {
 	overflow-y: visible;
 }
 .channelTextArea_a7d72e .button_dd4f85 {
@@ -3509,7 +3509,7 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 }
 
 /* Chat Box: AutoCompletion Command Icon */
-.channelTextArea_a7d72e .attachButton_d0696b .icon_da5ed7 {
+.channelTextArea_a7d72e .attachButton_bdf0de .icon_da5ed7 {
 	padding: 10px 4px 10px 16px;
 }
 /* AutoCompletion */
@@ -4176,20 +4176,20 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 .chat_a7d72e .channelTextArea_d5deea {
 	margin-top: 4px;
 }
-.chat_a7d72e .channelTextArea_d5deea .scrollableContainer_d0696b {
+.chat_a7d72e .channelTextArea_d5deea .scrollableContainer_bdf0d {
 	border-radius: 8px;
 	width: calc(100% - 53px);
 }
-.chat_a7d72e .channelTextArea_d5deea .scrollableContainer_d0696b .markup_f8f345.slateTextArea_e52116.textAreaWithoutAttachmentButton_d0696b {
+.chat_a7d72e .channelTextArea_d5deea .scrollableContainer_bdf0d .markup_f8f345.slateTextArea_e52116.textAreaWithoutAttachmentButton_d0696b {
 	margin-left: -10px;
 }
-.chat_a7d72e .channelTextArea_d5deea .scrollableContainer_d0696b .markup_f8f345 .emoji {
+.chat_a7d72e .channelTextArea_d5deea .scrollableContainer_bdf0d .markup_f8f345 .emoji {
 	height: 1.375rem;
 }
-.chat_a7d72e .channelTextArea_d5deea .scrollableContainer_d0696b .emojiButton_d91a75 {
+.chat_a7d72e .channelTextArea_d5deea .scrollableContainer_bdf0d .emojiButton_d91a75 {
 	filter: brightness(0.5);
 }
-.chat_a7d72e .channelTextArea_d5deea .scrollableContainer_d0696b .emojiButton_d91a75:hover {
+.chat_a7d72e .channelTextArea_d5deea .scrollableContainer_bdf0d .emojiButton_d91a75:hover {
 	filter: brightness(1);
 }
 
@@ -5015,11 +5015,11 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 .uploadModal_f82cc7 .inner_f82cc7 .file_f82cc7 .icon_f82cc7.image_f82cc7 {
 	background-color: #131313;
 }
-.modal_aee8c6 .uploadModal_f82cc7 .scrollableContainer_d0696b {
+.modal_aee8c6 .uploadModal_f82cc7 .scrollableContainer_bdf0d {
 	background-color: #141414;
 	border-radius: 4px;
 }
-.modal_aee8c6 .uploadModal_f82cc7 .scrollableContainer_d0696b:hover {
+.modal_aee8c6 .uploadModal_f82cc7 .scrollableContainer_bdf0d:hover {
 	background-color: #111111;
 }
 .uploadModal_f82cc7 .footer_f82cc7 {
@@ -5525,7 +5525,7 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 	margin: 8px 0px 0px;
 	width: 100%;
 }
-.container_d1c246 form .channelTextArea_fb4810 .scrollableContainer_d0696b {
+.container_d1c246 form .channelTextArea_fb4810 .scrollableContainer_bdf0d {
 	border-radius: 0px;
 }
 .container_d1c246 form .channelTextArea_fb4810 .sansAttachButtonCreateThread_d0696b {
@@ -9482,7 +9482,7 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 [class*=userPopoutOuter_] .section_f2c0a8 .messageInputContainer_f2c0a8 {
 	border: none;
 }
-[class*=userPopoutOuter_] .footer_b8cc6d .channelTextArea_d0696b .themedBackground_d0696b,
+[class*=userPopoutOuter_] .footer_b8cc6d .channelTextArea_bdf0de .themedBackground_d0696b,
 [class*=userPopoutOuter_] .section_f2c0a8 .messageInputContainer_f2c0a8 .messageInput_f2c0a8 {
 	background-color: var(--profile-body-background-color);
 	border-radius: 0px;
@@ -10098,6 +10098,44 @@ body {
 .container_efde15 {
     display: none;
 }
+
+/* Attach File/Invite Button */
+.channelTextArea_bdf0de .attachWrapper_f298d4 {
+	position: relative !important;
+}
+.channelTextArea_bdf0de .attachButton_bdf0de {
+	margin: 9px 4px 10px 0px !important;
+}
+.channelTextArea_bdf0de .attachWrapper_f298d4 .attachButton_bdf0de,
+.channelTextArea_bdf0de .attachWrapper_f298d4 .attachButton_bdf0de svg,
+.channelTextArea_bdf0de .attachWrapper_f298d4 .attachButton_bdf0de .attachButtonInner_f298d4 {
+	height: 24px !important;
+	width: 24px !important;
+}
+.channelTextArea_bdf0de .attachWrapper_f298d4 .attachButton_bdf0de .attachButtonInner_f298d4 .attachButtonPlus_f298d4 {
+	fill: #FFFFFF;
+}
+
+/* Server Message Notice */
+.wrapper_cbf230 .listItem_bba834 .item_f5370e {
+	background: #FFFFFF !important;
+	border-radius: 0px 4px 4px 0px !important;
+	width: 8px !important;
+	min-height: 0px !important;
+}
+.wrapper_cbf230 .listItem_bba834:hover .item_f5370e,
+.wrapper_cbf230 .listItem_bba834 .item_f5370e[style*="opacity: 1; height: 8px"],
+.wrapper_cbf230 .listItem_bba834 .item_f5370e[style*="opacity: 1; height: 40px"],
+.wrapper_cbf230 .listItem_bba834 .bd-unread .item_f5370e,
+.wrapper_cbf230 .listItem_bba834 .bd-hovered .item_f5370e,
+.wrapper_cbf230 .listItem_bba834 .bd-selected .item_f5370e,
+.wrapper_cbf230 .listItem_bba834 .bd-unread.bd-hovered:not(.bd-selected) .item_f5370e {
+	background: #FFFFFF !important;
+}
+
+	.floatingBars_bdf0de {
+		display: none;
+	}
 
 /********************************************** Vencord **********************************************/
 
