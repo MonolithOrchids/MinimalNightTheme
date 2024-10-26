@@ -1,6 +1,6 @@
 /**
  * @name MinimalNight
- * @version 1.2.3
+ * @version 1.2.4
  * @description Dark/Night and Minimalist Theme for Discord
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
@@ -8,7 +8,7 @@
 */
 
 :root {
-	--Settings-Theme-Version: "MinimalNight v1.2.3";
+	--Settings-Theme-Version: "MinimalNight v1.2.4";
 
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
@@ -1302,10 +1302,10 @@
 .theme-dark .container_a6d69a .container_c1668f.collapsed_c1668f {
 	padding: 0px 0px 0px 8px;
 }
-.theme-dark .container_a6d69a .container_c1668f.collapsed_c1668f .form_c1668f {
+.theme-dark .container_a6d69a .container_c1668f.collapsed_c1668f .form_a7d72e {
 	margin-right: 0px;
 }
-.theme-dark .container_a6d69a .container_c1668f.collapsed_c1668f .form_c1668f .submitButton_c1668f {
+.theme-dark .container_a6d69a .container_c1668f.collapsed_c1668f .form_a7d72e .submitButton_c1668f {
 	border-radius: 0px 8px 8px 0px;
 }
 .theme-dark .container_a6d69a .mainCard_a6d69a .bullet_d331f1,
@@ -3129,13 +3129,13 @@
 	border-radius: 0px;
 	margin: 0px;
 }
-.channelTextArea_a7d72e .scrollableContainer_bdf0d,
-.channelTextArea_d5deea .scrollableContainer_bdf0d {
+.channelTextArea_a7d72e .scrollableContainer_bdf0de .themedBackground_bdf0de,
+.channelTextArea_bdf0de .scrollableContainer_bdf0de .themedBackground_bdf0de {
 	background: var(--bg-overlay-1, var(--background-secondary-alt));
 	border-radius: 0px;
 	padding: 2px 2px 2px 4px;
 }
-.channelTextArea_a7d72e .wrapper_f9f2ca .scrollableContainer_bdf0d {
+.channelTextArea_a7d72e .wrapper_f9f2ca .scrollableContainer_bdf0de .themedBackground_bdf0de {
 	border-radius: 4px;
 	max-width: 94%;
 }
@@ -3143,7 +3143,7 @@
 	padding: 0px;
 }
 /* Chat Box Overflow Scrollbar */
-.channelTextArea_a7d72e .scrollableContainer_bdf0d::-webkit-scrollbar-thumb {
+.channelTextArea_a7d72e .scrollableContainer_bdf0de .themedBackground_bdf0de::-webkit-scrollbar-thumb {
 	background-color: #141414;
 }
 /* Chat Box: Send Longer Messages With Discord Nitro */
@@ -3209,7 +3209,7 @@
 }
 
 /* Sticker Preview Container */
-.scrollableContainer_bdf0d .stickerPreviews_ef287f {
+.scrollableContainer_bdf0de .themedBackground_bdf0de .stickerPreviews_ef287f {
 	padding: 4px 0 4px 0px;
 }
 /* Sticker In Chat */
@@ -3323,44 +3323,44 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 }
 
 /* No Permission */
-.channelTextAreaDisabled_d0696b .attachWrapper_f298d4,
-.channelTextAreaDisabled_d0696b .separator_a06035 {
+.channelTextAreaDisabled_bdf0de .attachWrapper_f298d4,
+.channelTextAreaDisabled_bdf0de .separator_f9f2ca {
 	display: none;
 }
 
 /* Chat Box Buttons */
-.channelTextArea_a7d72e .scrollableContainer_bdf0d {
+.channelTextArea_a7d72e .scrollableContainer_bdf0de .themedBackground_bdf0de {
 	overflow-y: visible;
 }
 .channelTextArea_a7d72e .button_dd4f85 {
 	height: 42px;
 }
 /* Send Message Button */
-.channelTextArea_a7d72e .button_dd4f85 .separator_a06035 {
+.channelTextArea_a7d72e .button_dd4f85 .separator_f9f2ca {
 	margin-left: -8px;
 }
-.channelTextArea_a7d72e .button_dd4f85 .separator_a06035 .innerButton_a06035 {
+.channelTextArea_a7d72e .button_dd4f85 .separator_f9f2ca .innerButton_a06035 {
 	margin: 0px 16px 0px 6px;
 	padding: 0px;
 	height: 44px;
 }
-.channelTextArea_a7d72e .button_dd4f85 .separator_a06035 .innerButton_a06035 .sendIcon_a06035 {
+.channelTextArea_a7d72e .button_dd4f85 .separator_f9f2ca .innerButton_a06035 .sendIcon_a06035 {
 	padding-top: 0px;
 	width: 22px !important;
 	height: 22px !important;
 }
-.channelTextArea_a7d72e .button_dd4f85 .separator_a06035 .innerButton_a06035:hover .sendIcon_a06035 {
+.channelTextArea_a7d72e .button_dd4f85 .separator_f9f2ca .innerButton_a06035:hover .sendIcon_a06035 {
 	transform: scale(1.14);
 }
-.channelTextArea_a7d72e .button_dd4f85 .separator_a06035 .buttonContainer_a06035 path {
+.channelTextArea_a7d72e .button_dd4f85 .separator_f9f2ca .buttonContainer_bdf0de path {
 	color: #CECECE;
 	opacity: 0.3;
 	transition: 100ms;
 }
-.channelTextArea_a7d72e .button_dd4f85 .separator_a06035 .buttonContainer_a06035 .button_a06035[disabled] path {
+.channelTextArea_a7d72e .button_dd4f85 .separator_f9f2ca .buttonContainer_bdf0de .button_a06035[disabled] path {
 	opacity: 0.1;
 }
-.channelTextArea_a7d72e .button_dd4f85 .separator_a06035 .buttonContainer_a06035:hover path {
+.channelTextArea_a7d72e .button_dd4f85 .separator_f9f2ca .buttonContainer_bdf0de:hover path {
 	color: #FFFFFF;
 	opacity: 1;
 }
@@ -4173,23 +4173,23 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 }
 
 /* Edit Message Box */
-.chat_a7d72e .channelTextArea_d5deea {
+.chat_a7d72e .channelTextArea_bdf0de {
 	margin-top: 4px;
 }
-.chat_a7d72e .channelTextArea_d5deea .scrollableContainer_bdf0d {
+.chat_a7d72e .channelTextArea_bdf0de .scrollableContainer_bdf0de .themedBackground_bdf0de {
 	border-radius: 8px;
 	width: calc(100% - 53px);
 }
-.chat_a7d72e .channelTextArea_d5deea .scrollableContainer_bdf0d .markup_f8f345.slateTextArea_e52116.textAreaWithoutAttachmentButton_d0696b {
+.chat_a7d72e .channelTextArea_bdf0de .scrollableContainer_bdf0de .themedBackground_bdf0de .markup_f8f345.slateTextArea_e52116.textAreaWithoutAttachmentButton_d0696b {
 	margin-left: -10px;
 }
-.chat_a7d72e .channelTextArea_d5deea .scrollableContainer_bdf0d .markup_f8f345 .emoji {
+.chat_a7d72e .channelTextArea_bdf0de .scrollableContainer_bdf0de .themedBackground_bdf0de .markup_f8f345 .emoji {
 	height: 1.375rem;
 }
-.chat_a7d72e .channelTextArea_d5deea .scrollableContainer_bdf0d .emojiButton_d91a75 {
+.chat_a7d72e .channelTextArea_bdf0de .scrollableContainer_bdf0de .themedBackground_bdf0de .emojiButton_d91a75 {
 	filter: brightness(0.5);
 }
-.chat_a7d72e .channelTextArea_d5deea .scrollableContainer_bdf0d .emojiButton_d91a75:hover {
+.chat_a7d72e .channelTextArea_bdf0de .scrollableContainer_bdf0de .themedBackground_bdf0de .emojiButton_d91a75:hover {
 	filter: brightness(1);
 }
 
@@ -5015,11 +5015,11 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 .uploadModal_f82cc7 .inner_f82cc7 .file_f82cc7 .icon_f82cc7.image_f82cc7 {
 	background-color: #131313;
 }
-.modal_aee8c6 .uploadModal_f82cc7 .scrollableContainer_bdf0d {
+.modal_aee8c6 .uploadModal_f82cc7 .scrollableContainer_bdf0de .themedBackground_bdf0de {
 	background-color: #141414;
 	border-radius: 4px;
 }
-.modal_aee8c6 .uploadModal_f82cc7 .scrollableContainer_bdf0d:hover {
+.modal_aee8c6 .uploadModal_f82cc7 .scrollableContainer_bdf0de .themedBackground_bdf0de:hover {
 	background-color: #111111;
 }
 .uploadModal_f82cc7 .footer_f82cc7 {
@@ -5525,7 +5525,7 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 	margin: 8px 0px 0px;
 	width: 100%;
 }
-.container_d1c246 form .channelTextArea_fb4810 .scrollableContainer_bdf0d {
+.container_d1c246 form .channelTextArea_fb4810 .scrollableContainer_bdf0de .themedBackground_bdf0de {
 	border-radius: 0px;
 }
 .container_d1c246 form .channelTextArea_fb4810 .sansAttachButtonCreateThread_d0696b {
