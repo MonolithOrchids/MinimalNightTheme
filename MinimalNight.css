@@ -1,6 +1,6 @@
 /**
  * @name MinimalNight
- * @version 1.2.1
+ * @version 1.2.2
  * @description Dark/Night and Minimalist Theme for Discord
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
@@ -8,7 +8,7 @@
 */
 
 :root {
-	--Settings-Theme-Version: "MinimalNight v1.2.1";
+	--Settings-Theme-Version: "MinimalNight v1.2.2";
 
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
@@ -3332,35 +3332,35 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 .channelTextArea_a7d72e .scrollableContainer_d0696b {
 	overflow-y: visible;
 }
-.channelTextArea_a7d72e .buttons_d0696b {
+.channelTextArea_a7d72e .button_dd4f85 {
 	height: 42px;
 }
 /* Send Message Button */
-.channelTextArea_a7d72e .buttons_d0696b .separator_a06035 {
+.channelTextArea_a7d72e .button_dd4f85 .separator_a06035 {
 	margin-left: -8px;
 }
-.channelTextArea_a7d72e .buttons_d0696b .separator_a06035 .innerButton_a06035 {
+.channelTextArea_a7d72e .button_dd4f85 .separator_a06035 .innerButton_a06035 {
 	margin: 0px 16px 0px 6px;
 	padding: 0px;
 	height: 44px;
 }
-.channelTextArea_a7d72e .buttons_d0696b .separator_a06035 .innerButton_a06035 .sendIcon_a06035 {
+.channelTextArea_a7d72e .button_dd4f85 .separator_a06035 .innerButton_a06035 .sendIcon_a06035 {
 	padding-top: 0px;
 	width: 22px !important;
 	height: 22px !important;
 }
-.channelTextArea_a7d72e .buttons_d0696b .separator_a06035 .innerButton_a06035:hover .sendIcon_a06035 {
+.channelTextArea_a7d72e .button_dd4f85 .separator_a06035 .innerButton_a06035:hover .sendIcon_a06035 {
 	transform: scale(1.14);
 }
-.channelTextArea_a7d72e .buttons_d0696b .separator_a06035 .buttonContainer_a06035 path {
+.channelTextArea_a7d72e .button_dd4f85 .separator_a06035 .buttonContainer_a06035 path {
 	color: #CECECE;
 	opacity: 0.3;
 	transition: 100ms;
 }
-.channelTextArea_a7d72e .buttons_d0696b .separator_a06035 .buttonContainer_a06035 .button_a06035[disabled] path {
+.channelTextArea_a7d72e .button_dd4f85 .separator_a06035 .buttonContainer_a06035 .button_a06035[disabled] path {
 	opacity: 0.1;
 }
-.channelTextArea_a7d72e .buttons_d0696b .separator_a06035 .buttonContainer_a06035:hover path {
+.channelTextArea_a7d72e .button_dd4f85 .separator_a06035 .buttonContainer_a06035:hover path {
 	color: #FFFFFF;
 	opacity: 1;
 }
@@ -3377,13 +3377,13 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 }
 /* Emoji & Extra Buttons */
 .channelTextArea_a7d72e .expression-picker-chat-input-button .button_dd4f85,
-.channelTextArea_a7d72e .buttons_d0696b button[aria-label*="Send a gift"] {
+.channelTextArea_a7d72e .button_dd4f85 button[aria-label*="Send a gift"] {
 	opacity: 0.3;
 	transition: 100ms;
 }
 .channelTextArea_a7d72e .expression-picker-chat-input-button .button_dd4f85:hover,
 .channelTextArea_a7d72e .expression-picker-chat-input-button .active_f9af59.button_dd4f85,
-.channelTextArea_a7d72e .buttons_d0696b button[aria-label*="Send a gift"]:hover {
+.channelTextArea_a7d72e .button_dd4f85 button[aria-label*="Send a gift"]:hover {
 	transform: scale(1.14);
 	opacity: 1;
 }
@@ -3398,20 +3398,20 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 	color: #FFFFFF;
 }
 /* Stickers Button */
-.channelTextArea_a7d72e .buttons_d0696b .stickerButton_bdf0de,
-.channelTextArea_a7d72e .buttons_d0696b button[aria-label="Open sticker picker"] {
+.channelTextArea_a7d72e .button_dd4f85 .stickerButton_bdf0de,
+.channelTextArea_a7d72e .button_dd4f85 button[aria-label="Open sticker picker"] {
 	display: var(--Chatbox-Stickers-Button);
 }
-.channelTextArea_a7d72e .buttons_d0696b .stickerButton_bdf0de .stickerIcon__3ceda {
+.channelTextArea_a7d72e .button_dd4f85 .stickerButton_bdf0de .stickerIcon__3ceda {
 	width: 21px !important;
 	height: 21px !important;
 }
 /* GIF Button */
-.channelTextArea_a7d72e .buttons_d0696b button[aria-label="Open GIF picker"] {
+.channelTextArea_a7d72e .button_dd4f85 button[aria-label="Open GIF picker"] {
 	display: var(--Chatbox-GIF-Button);
 }
 /* Gift Button */
-.channelTextArea_a7d72e .buttons_d0696b button[aria-label*="Send a gift"] {
+.channelTextArea_a7d72e .button_dd4f85 button[aria-label*="Send a gift"] {
 	display: var(--Chatbox-Gift-Button);
 }
 /* Gift Button Menu Popup */
