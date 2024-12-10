@@ -1,6 +1,6 @@
 /**
  * @name MinimalNight
- * @version 1.3.0
+ * @version 1.3.1
  * @description Dark/Night and Minimalist Theme for Discord
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
@@ -8,7 +8,7 @@
 */
 
 :root {
-	--Settings-Theme-Version: "MinimalNight v1.3.0";
+	--Settings-Theme-Version: "MinimalNight v1.3.1";
 
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
@@ -301,6 +301,9 @@
 	border-radius: 0px 0px 8px 8px;
 	margin-right: 8px;
 	top: -8px;
+}
+.wrapper_fea3ef .unreadMentionsIndicatorBottom_fea3ef {
+	bottom: 0px;
 }
 .wrapper_fea3ef .unreadMentionsIndicatorBottom_fea3ef .bar_edf32f {
 	border-radius: 8px 8px 0px 0px;
@@ -6336,7 +6339,7 @@ form .wrapper_faf5ab .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
 /* Online Status Mask Color */
 .mask_c51b4e rect[fill*="#23a55a"],
 .mask_c51b4e rect[fill*="#3ba55c"],
-[mask*="url(#svg-mask-status-online)"],
+[mask="url(#svg-mask-status-online)"],
 [aria-label*="Online" i] rect[fill*="hsl(139"] {
 	fill: hsl(153, calc(var(--saturation-factor, 1) * 47.3%), 47.3%); /* #43B581 */
 }
@@ -8500,7 +8503,7 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 }
 */
 /* User Profile Modal: Phone Status Icon */
-.root_f9a4c9 .userProfileModalOuter_c69a7b .topSection_b9fccc .header_ec3b75 rect[mask*="url(#svg-mask-status-online-mobile)"] {
+.root_f9a4c9 .userProfileModalOuter_c69a7b .topSection_b9fccc .header_ec3b75 rect[mask="url(#svg-mask-status-online-mobile)"] {
 	width: 28px;
 	height: 40px;
 	x: 86;
@@ -9013,11 +9016,11 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 	padding: 4px 4px 8px 10px;
 }
 .outer_c69a7b.biteSize_c69a7b .header_b8cc6d {
-	min-height: calc(35px + var(--custom-user-banner-height-bite-size));
+	min-height: calc(35px + var(--custom-user-profile-banner-height));
 }
 /* UserPopout Username */
 .outer_c69a7b.biteSize_c69a7b .thin_c49869 .container_c32acf {
-	padding: 56px 4px 6px 10px !important;
+	padding: 24px 4px 6px 10px !important;
 	margin-bottom: 0px;
 }
 .outer_c69a7b.biteSize_c69a7b .userProfileInnerThemedNonPremium_c69a7b .section_d7a21f.usernameSection_d2b491 {
@@ -9090,8 +9093,8 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 }
 
 /* Remove extra padding */
-.outer_c69a7b.biteSize_c69a7b .invisibleContainer_af9888 {
-	height: 0px;
+.outer_c69a7b.biteSize_c69a7b [class^=invisibleContainer_] {
+	height: 0px !important;
 }
 /* Phone Status */
 .outer_c69a7b.biteSize_c69a7b .wrapper_c51b4e rect {
@@ -9100,7 +9103,7 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 	x: 74;
 	y: 74;
 }
-.outer_c69a7b.biteSize_c69a7b .wrapper_c51b4e rect[mask*="url(#svg-mask-status-online-mobile)"] {
+.outer_c69a7b.biteSize_c69a7b .wrapper_c51b4e rect[mask="url(#svg-mask-status-online-mobile)"] {
 	width: 24px;
 	height: 36px;
 	x: 72;
@@ -9144,11 +9147,11 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 	mask: none !important;
 }
 .outer_c69a7b.biteSize_c69a7b .avatarWrapper_f89da9 .wrapper_c51b4e .avatarDecoration_c51b4e .avatar_ec3b75,
-.outer_c69a7b.biteSize_c69a7b .avatarWrapper_f89da9 .wrapper_c51b4e svg foreignObject[mask*="url(#svg-mask-avatar-decoration-status-round-80)"],
-.outer_c69a7b.biteSize_c69a7b .avatarWrapper_f89da9 .wrapper_c51b4e svg foreignObject[mask*="url(#svg-mask-avatar-decoration-profile-status-mobile-square-80)"],
+.outer_c69a7b.biteSize_c69a7b .avatarWrapper_f89da9 .wrapper_c51b4e svg foreignObject[mask="url(#svg-mask-avatar-decoration-status-round-80)"],
+.outer_c69a7b.biteSize_c69a7b .avatarWrapper_f89da9 .wrapper_c51b4e svg foreignObject[mask="url(#svg-mask-avatar-decoration-profile-status-mobile-square-80)"],
 .outer_c69a7b.biteSize_c69a7b .avatar_f94206 .wrapper_c51b4e .avatarDecoration_c51b4e .avatar_ec3b75,
-.outer_c69a7b.biteSize_c69a7b .avatar_f94206 .wrapper_c51b4e svg foreignObject[mask*="url(#svg-mask-avatar-decoration-status-round-80)"],
-.outer_c69a7b.biteSize_c69a7b .avatar_f94206 .wrapper_c51b4e svg foreignObject[mask*="url(#svg-mask-avatar-decoration-profile-status-mobile-square-80)"] {
+.outer_c69a7b.biteSize_c69a7b .avatar_f94206 .wrapper_c51b4e svg foreignObject[mask="url(#svg-mask-avatar-decoration-status-round-80)"],
+.outer_c69a7b.biteSize_c69a7b .avatar_f94206 .wrapper_c51b4e svg foreignObject[mask="url(#svg-mask-avatar-decoration-profile-status-mobile-square-80)"] {
 	background: transparent !important;
 	border-radius: 0% !important;
 }
@@ -9211,7 +9214,7 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 /* Custom Status */
 .outer_c69a7b.biteSize_c69a7b [class^=visibleContainer] 
 {
-    top: (var(--custom-user-banner-height-bite-size)) !important;
+    top: var(--custom-user-profile-banner-height) !important;
     left: 124px !important;
 }
 .outer_c69a7b.biteSize_c69a7b [class^=invisibleContainer_] 
@@ -9703,8 +9706,8 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 .root_f9a4c9 .outer_c69a7b.biteSize_c69a7b .avatar_f94206 .wrapper_c51b4e svg rect {
 	display: none;
 }
-.root_f9a4c9 .userProfileModalOuter_c69a7b .topSection_b9fccc .header_ec3b75 .wrapper_c51b4e rect[mask*="url(#svg-mask-status-online-mobile)"] {
-	display: block;
+.root_f9a4c9 .userProfileModalOuter_c69a7b .topSection_b9fccc .header_ec3b75 .wrapper_c51b4e:has( rect[mask="url(#svg-mask-status-online-mobile)"]) rect {
+	display: block !important;
 }
 .root_f9a4c9 .userProfileModalOuter_c69a7b .topSection_b9fccc .header_ec3b75 foreignObject[mask="url(#svg-mask-avatar-default)"],
 .root_f9a4c9 .userProfileModalOuter_c69a7b .topSection_b9fccc .header_ec3b75 foreignObject[mask="url(#svg-mask-avatar-status-round-120)"] {
@@ -9722,11 +9725,11 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 .root_f9a4c9 .userProfileModalOuter_c69a7b .topSection_b9fccc .header_ec3b75 .avatar_ec3b75:hover foreignObject[mask="url(#svg-mask-avatar-status-round-120)"] {
 	border-radius: 0%;
 }
-.root_f9a4c9 .userProfileModalOuter_c69a7b .topSection_b9fccc .header_ec3b75 .avatar_ec3b75:hover foreignObject[mask*="url(#"],
+.root_f9a4c9 .userProfileModalOuter_c69a7b .topSection_b9fccc .header_ec3b75 .avatar_ec3b75:hover foreignObject[mask="url(#"],
 .root_f9a4c9 .userProfileModalOuter_c69a7b .topSection_b9fccc .header_ec3b75 .avatar_ec3b75:hover foreignObject[mask="url(#svg-mask-avatar-status-mobile-120)"] {
 	mask: none;
 }
-.root_f9a4c9 .userProfileModalOuter_c69a7b .topSection_b9fccc .header_ec3b75 .wrapper_c51b4e:hover rect[mask*="url(#svg-mask-status-online-mobile)"],
+.root_f9a4c9 .userProfileModalOuter_c69a7b .topSection_b9fccc .header_ec3b75 .wrapper_c51b4e:hover rect[mask="url(#svg-mask-status-online-mobile)"],
 .root_f9a4c9 .userProfileModalOuter_c69a7b .topSection_b9fccc .header_ec3b75 .wrapper_c51b4e:hover .avatarDecoration_c51b4e {
 	display: none;
 }
@@ -9824,7 +9827,7 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 .outer_c69a7b.biteSize_c69a7b .wrapper_c51b4e rect {
 	display: none;
 }
-.outer_c69a7b.biteSize_c69a7b .wrapper_c51b4e rect[mask*="url(#svg-mask-status-online-mobile)"] {
+.outer_c69a7b.biteSize_c69a7b .wrapper_c51b4e rect[mask="url(#svg-mask-status-online-mobile)"] {
 	display: block;
 }
 .outer_c69a7b.biteSize_c69a7b foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
@@ -9914,10 +9917,10 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 }
 */
 /* User Popout Profile: Avatar Background Fill */
-.outer_c69a7b.biteSize_c69a7b .avatar_f94206 .wrapper_c51b4e foreignObject[mask*="url(#svg-mask-avatar-status-round-80)"],
-.outer_c69a7b.biteSize_c69a7b .avatar_f94206 .wrapper_c51b4e foreignObject[mask*="url(#svg-mask-avatar-status-mobile-80)"],
-.outer_c69a7b.biteSize_c69a7b .avatarWrapper_f89da9 .wrapper_c51b4e foreignObject[mask*="url(#svg-mask-avatar-status-round-80)"],
-.outer_c69a7b.biteSize_c69a7b .avatarWrapper_f89da9 .wrapper_c51b4e foreignObject[mask*="url(#svg-mask-avatar-status-mobile-80)"] {
+.outer_c69a7b.biteSize_c69a7b .avatar_f94206 .wrapper_c51b4e foreignObject[mask="url(#svg-mask-avatar-status-round-80)"],
+.outer_c69a7b.biteSize_c69a7b .avatar_f94206 .wrapper_c51b4e foreignObject[mask="url(#svg-mask-avatar-status-mobile-80)"],
+.outer_c69a7b.biteSize_c69a7b .avatarWrapper_f89da9 .wrapper_c51b4e foreignObject[mask="url(#svg-mask-avatar-status-round-80)"],
+.outer_c69a7b.biteSize_c69a7b .avatarWrapper_f89da9 .wrapper_c51b4e foreignObject[mask="url(#svg-mask-avatar-status-mobile-80)"] {
 	background: var(--profile-avatar-border-color);
 	border-radius: 50%;
 }
