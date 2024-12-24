@@ -1,6 +1,6 @@
 /**
  * @name MinimalNight
- * @version 1.3.5
+ * @version 1.3.6
  * @description Dark/Night and Minimalist Theme for Discord
  * @source https://github.com/MonolithOrchids/MinimalNightTheme/
  * @updateUrl https://github.com/MonolithOrchids/MinimalNightTheme/blob/master/MinimalNight.css
@@ -8,7 +8,7 @@
 */
 
 :root {
-	--Settings-Theme-Version: "MinimalNight v1.3.5";
+	--Settings-Theme-Version: "MinimalNight v1.3.6";
 
 	--Channel-Invite-Edit-Buttons: none;				/* flex = ON, none = OFF */
 	--Channel-Category-Invite-Button: flex;				/* flex = ON, none = OFF */
@@ -7993,7 +7993,7 @@ tooltipBrand_b6c360 .tooltipPointer_b6c360 {
 	display: none;
 }
 /* Video/Voice Call/Channel: Titlebar Chat Sidebar Icon */
-.wrapper_d880dc.chatSidebarOpen_d880dc .callContainer_d880dc {
+.wrapper_d880dc.sidebarOpen_d880dc .callContainer_d880dc {
 	border-radius: 0px;
 }
 .wrapper_d880dc .chatButton_dd069c {
