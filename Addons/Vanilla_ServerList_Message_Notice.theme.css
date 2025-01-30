@@ -1,18 +1,18 @@
-//META{"name":"MinimalNight | Vanilla Serverlist Notices","description":"Reverts the serverlist message notices to the default Discord look","OriginalAuthor":"KillYoy#0295","authorId":"98468214824001536"}*//{}
+/*META{"name":"MinimalNight | Vanilla Serverlist Notices","description":"Reverts the serverlist message notices to the default Discord look","OriginalAuthor":"KillYoy#0295","authorId":"98468214824001536"}*/
 
 /* Server Message Notice */
-.wrapper_fea3ef .listItem_c96c45 .item_c4cd66 {
+.wrapper_ef3116 .listItem__650eb .item__58105 {
 	background: #FFFFFF !important;
 	border-radius: 0px 4px 4px 0px !important;
 	width: 8px !important;
 	min-height: 0px !important;
 }
-.wrapper_fea3ef .listItem_c96c45:hover .item_c4cd66,
-.wrapper_fea3ef .listItem_c96c45 .item_c4cd66[style*="opacity: 1; height: 8px"],
-.wrapper_fea3ef .listItem_c96c45 .item_c4cd66[style*="opacity: 1; height: 40px"],
-.wrapper_fea3ef .listItem_c96c45 .bd-unread .item_c4cd66,
-.wrapper_fea3ef .listItem_c96c45 .bd-hovered .item_c4cd66,
-.wrapper_fea3ef .listItem_c96c45 .bd-selected .item_c4cd66,
-.wrapper_fea3ef .listItem_c96c45 .bd-unread.bd-hovered:not(.bd-selected) .item_c4cd66 {
+.wrapper_ef3116 .listItem__650eb:hover .item__58105,
+.wrapper_ef3116 .listItem__650eb .item__58105[style*="opacity: 1; height: 8px"],
+.wrapper_ef3116 .listItem__650eb .item__58105[style*="opacity: 1; height: 40px"],
+.wrapper_ef3116 .listItem__650eb .bd-unread .item__58105,
+.wrapper_ef3116 .listItem__650eb .bd-hovered .item__58105,
+.wrapper_ef3116 .listItem__650eb .bd-selected .item__58105,
+.wrapper_ef3116 .listItem__650eb .bd-unread.bd-hovered:not(.bd-selected) .item__58105 {
 	background: #FFFFFF !important;
 }

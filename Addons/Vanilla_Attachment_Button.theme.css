@@ -1,18 +1,18 @@
-//META{"name":"MinimalNight | Vanilla File Attachment","description":"Reverts the file attachment to the default Discord location","OriginalAuthor":"KillYoy#0295","authorId":"98468214824001536"}*//{}
+/*META{"name":"MinimalNight | Vanilla File Attachment","description":"Reverts the file attachment to the default Discord location","OriginalAuthor":"KillYoy#0295","authorId":"98468214824001536"}*/
 
 /* Attach File/Invite Button */
-.channelTextArea_bdf0de .attachWrapper_f298d4 {
+.channelTextArea__74017 .attachWrapper__0923f {
 	position: relative !important;
 }
-.channelTextArea_bdf0de .attachButton_bdf0de {
+.channelTextArea__74017 .attachButton__74017 {
 	margin: 9px 4px 10px 0px !important;
 }
-.channelTextArea_bdf0de .attachWrapper_f298d4 .attachButton_bdf0de,
-.channelTextArea_bdf0de .attachWrapper_f298d4 .attachButton_bdf0de svg,
-.channelTextArea_bdf0de .attachWrapper_f298d4 .attachButton_bdf0de .attachButtonInner_f298d4 {
+.channelTextArea__74017 .attachWrapper__0923f .attachButton__74017,
+.channelTextArea__74017 .attachWrapper__0923f .attachButton__74017 svg,
+.channelTextArea__74017 .attachWrapper__0923f .attachButton__74017 .attachButtonInner__0923f {
 	height: 24px !important;
 	width: 24px !important;
 }
-.channelTextArea_bdf0de .attachWrapper_f298d4 .attachButton_bdf0de .attachButtonInner_f298d4 .attachButtonPlus_f298d4 {
+.channelTextArea__74017 .attachWrapper__0923f .attachButton__74017 .attachButtonInner__0923f .attachButtonPlus__0923f {
 	fill: #FFFFFF;
 }
