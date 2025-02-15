@@ -1,3 +1,6 @@
+/* Very bad solution*/
+@import url("https://gold-me.github.io/DiscordIcons/main.css");
+
 /* DEFINITIONS */
 @property --si-show {
 	syntax: "show | hide";
@@ -83,7 +86,7 @@
 	initial-value: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Camera.svg");
 }
 
-@property --si-FriendRequests {
+@property --si-ContentSocial {
 	syntax: "<url>";
 	inherits: true;
 	initial-value: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Group.svg");
@@ -485,14 +488,14 @@
 	initial-value: url("https://raw.githubusercontent.com/KillYoy/DiscordNight/master/Icons/SVG/Delete.svg");
 }
 
-[class^="standardSidebarView_"] {
+.standardSidebarView__23e6b {
 
 	/* Padding and Icons */
 	.item_b3f026 {
 		padding: calc((32px - var(--si-size)) / 2) calc((32px - var(--si-size)) / 2);
 	}
 
-	.item_b3f026::before {
+	.sidebar__23e6b .item_b3f026::before {
 		content: "";
 		float: left;
 		width: var(--si-size);
@@ -516,13 +519,13 @@
 		opacity: 0.7;
 	}
 
-	.item_b3f026[class*="selected"]::before {
+	.item_b3f026.selected_b3f026::before {
 		opacity: 1;
 	}
 
 	/* Button Hover & Animations */
 	@container style(--si-animations: true) {
-		[class^="sidebar_"] .item_b3f026 {
+		.sidebar__23e6b .item_b3f026 {
 			border-radius: 4px 0px 0px 4px;
 			transform: translateZ(0);
 			transition: 220ms;
@@ -530,8 +533,8 @@
 			padding-bottom: 4px !important;
 		}
 
-		[class^="sidebar_"] .item_b3f026:hover,
-		[class^="sidebar_"] .selected_b3f026.item_b3f026 {
+		.sidebar__23e6b .item_b3f026:hover,
+		.sidebar__23e6b .selected_b3f026.item_b3f026 {
 			transform: translateX(8px);
 			transition: 160ms;
 		}
@@ -540,472 +543,23 @@
 	/* Icons Expansion */
 	@container style(--si-expand: true) {
 
-		[class^="sidebar_"] .item_b3f026:hover,
+		.sidebar__23e6b .item_b3f026:hover,
 		.selected_b3f026.item_b3f026 {
 			min-width: calc(var(--custom-standard-sidebar-view-sidebar-content-width) + (var(--si-size) * (1 + (1 / 3))));
 			margin-left: calc(-1 * var(--si-size) * (1 + (1 / 3)));
 		}
 	}
-
-	/* Misc .Fixes */
-	[class^="serverBoostTabItem_"][aria-selected="true"] {
-		background-color: var(--background-modifier-selected) !important;
-	}
-}
-
-/* You have ThemeAttributes :) */
-[class^="standardSidebarView_"]:has([data-tab-id]) {
-
-	/* Nitro, Server Boost & Subscriptions Selected Color Fix */
-	.selected_b3f026.item_b3f026[data-tab-id="Discord Nitro" i] [class^="background_"] {
-		background-color: unset !important;
-		z-index: 0;
-	}
-
-	/* Remove Unnesecary Icons */
-	[class^="premiumLabel_"] svg,
-	[class*="serverBoostTabItem_"] .icon_cbe0b4,
-	.item_b3f026[data-tab-id="DELETE" i] [class^="tabBarItemContainer_"] svg,
-	.item_b3f026[data-tab-id="logout"] [class^="tabBarItemContainer_"] svg {
-		display: none;
-	}
-
-	/*		User Settings		*/
-	/* Settings: My Account */
-	.item_b3f026[data-tab-id="My Account" i]::before {
-		mask: var(--si-MyAccount) center/contain no-repeat;
-	}
-
-	/* Settings: Profiles */
-	.item_b3f026[data-tab-id="Profile Customization" i]::before {
-		mask: var(--si-ProfileCustomization) center/contain no-repeat;
-	}
-
-	/* Settings: Privacy & Safety */
-	.item_b3f026[data-tab-id="Privacy & Safety" i]::before {
-		mask: var(--si-PrivacySafety) center/contain no-repeat;
-	}
-
-	/* Settings: Family Center */
-	.item_b3f026[data-tab-id="Family Center" i]::before {
-		mask: var(--si-FamilyCenter) center/contain no-repeat;
-	}
-
-	/* Settings: Authorized Apps */
-	.item_b3f026[data-tab-id="Authorized Apps" i]::before {
-		mask: var(--si-AuthorizedApps) center/contain no-repeat;
-	}
-
-	/* Settings: Devices */
-	.item_b3f026[data-tab-id="Sessions" i]::before {
-		mask: var(--si-Devices) center/contain no-repeat;
-	}
-
-	/* Settings: Connections */
-	.item_b3f026[data-tab-id="Connections" i]::before {
-		mask: var(--si-Connections) center/contain no-repeat;
-	}
-
-	/* Settings: Clips */
-	.item_b3f026[data-tab-id="Settings Clips" i]::before {
-		mask: var(--si-Clips) center/contain no-repeat;
-	}
-
-	/* Settings: Friend Requests */
-	.item_b3f026[data-tab-id="Friend Requests" i]::before {
-		mask: var(--si-FriendRequests) center/contain no-repeat;
-	}
-
-	/*		Billing Settings		*/
-
-	/* Settings: Discord Nitro */
-
-	.item_b3f026[data-tab-id="Discord Nitro" i]::before {
-		mask: var(--si-Nitro) center/contain no-repeat;
-	}
-
-	.item_b3f026[data-tab-id="Discord Nitro" i]:hover::before,
-	.selected_b3f026.item_b3f026[data-tab-id="Discord Nitro" i]::before {
-		background-color: var(--brand-500) !important;
-	}
-
-	/* Settings: Server Boost */
-
-	.item_b3f026[data-tab-id="Nitro Server Boost" i]::before {
-		mask: var(--si-ServerBoost) center/contain no-repeat;
-	}
-
-	.item_b3f026[data-tab-id="Nitro Server Boost" i]:hover::before,
-	.selected_b3f026.item_b3f026[data-tab-id="Nitro Server Boost" i]::before {
-		background-color: var(--guild-boosting-pink) !important;
-	}
-
-	/* Settings: Subscriptions */
-	.item_b3f026[data-tab-id="Subscriptions" i]::before {
-		mask: var(--si-Subscriptions) center/contain no-repeat;
-	}
-
-	/* Settings: Gift Inventory */
-	.item_b3f026[data-tab-id="Library Inventory" i]::before {
-		mask: var(--si-Gifts) center/contain no-repeat;
-	}
-
-	/* Settings: Billing */
-	.item_b3f026[data-tab-id="Billing" i]::before {
-		mask: var(--si-Billing) center/contain no-repeat;
-	}
-
-	/*		App Settings		*/
-
-	/* Settings: Appearance */
-	.item_b3f026[data-tab-id="Appearance" i]::before {
-		mask: var(--si-Appearance) center/contain no-repeat;
-	}
-
-	/* Settings: Appearance */
-	.item_b3f026[data-tab-id="Accessibility" i]::before {
-		mask: var(--si-Accessibility) center/contain no-repeat;
-	}
-
-	/* Settings: Voice & Video */
-	.item_b3f026[data-tab-id="Voice & Video" i]::before {
-		mask: var(--si-VoiceVideo) center/contain no-repeat;
-	}
-
-	/* Settings: Chat */
-	.item_b3f026[data-tab-id="Text & Images" i]::before {
-		mask: var(--si-Chat) center/contain no-repeat;
-	}
-
-	/* Settings: Notifications */
-	.item_b3f026[data-tab-id="Notifications" i]::before {
-		mask: var(--si-Notifications) center/contain no-repeat;
-	}
-
-	/* Settings: Keybinds */
-	.item_b3f026[data-tab-id="Keybinds" i]::before {
-		mask: var(--si-Keybinds) center/contain no-repeat;
-	}
-
-	/* Settings: Language */
-	.item_b3f026[data-tab-id="Language" i]::before {
-		mask: var(--si-Language) center/contain no-repeat;
-	}
-
-	/* Settings: Windows Settings */
-	.item_b3f026[data-tab-id="Windows" i]::before {
-		mask: var(--si-Windows) center/contain no-repeat;
-	}
-
-	/* Settings: Linux Settings */
-	.item_b3f026[data-tab-id="Linux" i]::before {
-		mask: var(--si-Linux) center/contain no-repeat;
-	}
-
-	/* Settings: Streamer Mode */
-	.item_b3f026[data-tab-id="Streamer Mode" i]::before {
-		mask: var(--si-Streaming) center/contain no-repeat;
-	}
-
-	/* Settings: Advanced */
-	.item_b3f026[data-tab-id="Advanced" i]::before {
-		mask: var(--si-Advanced) center/contain no-repeat;
-	}
-
-	/* Settings: Vencord Icons */
-	.item_b3f026[data-tab-id="VencordSettings" i]::before {
-		mask: var(--si-Vencord) center/contain no-repeat;
-	}
-
-	.item_b3f026[data-tab-id="VencordPlugins" i]::before {
-		mask: var(--si-Plugins) center/contain no-repeat;
-	}
-
-	.item_b3f026[data-tab-id="VencordThemes" i]::before {
-		mask: var(--si-Themes) center/contain no-repeat;
-	}
-
-	.item_b3f026[data-tab-id="VencordUpdater" i]::before {
-		mask: var(--si-Updater) center/contain no-repeat;
-	}
-
-	.item_b3f026[data-tab-id="VencordCloud" i]::before {
-		mask: var(--si-Cloud) center/contain no-repeat;
-	}
-
-	.item_b3f026[data-tab-id="VencordSettingsSync" i]::before {
-		mask: var(--si-BackupRestore) center/contain no-repeat;
-	}
-
-	/*    Activity Settings    */
-	/* Settings: Activity Privacy */
-	.item_b3f026[data-tab-id="Activity Privacy" i]::before {
-		mask: var(--si-ActivityPrivacy) center/contain no-repeat;
-	}
-
-	/* Settings: Registered Games */
-	.item_b3f026[data-tab-id="Game Activity" i]::before {
-		mask: var(--si-GameActivity) center/contain no-repeat;
-	}
-
-	/* Settings: Overlay */
-	.item_b3f026[data-tab-id="Overlay" i]::before {
-		mask: var(--si-Overlay) center/contain no-repeat;
-	}
-
-	/*      Misc Settings       */
-	/* Settings: What's New */
-	.item_b3f026[data-tab-id="changelog" i]::before {
-		mask: var(--si-Changelog) center/contain no-repeat;
-	}
-
-	/* Settings: Merch */
-	.item_b3f026[data-tab-id="merchandise" i]::before {
-		mask: var(--si-Merch) center/contain no-repeat;
-	}
-
-	/* Settings: HypeSquad */
-	.item_b3f026[data-tab-id="Hypesquad Online" i]::before {
-		mask: var(--si-HypeSquad) center/contain no-repeat;
-	}
-
-	/* Settings: Experiments */
-	.item_b3f026[data-tab-id="Experiments" i]::before {
-		mask: var(--si-Experiments) center/contain no-repeat;
-	}
-
-	/* Settings: Developer Options */
-	.item_b3f026[data-tab-id="Developer Options" i]::before {
-		mask: var(--si-DeveloperOptions) center/contain no-repeat;
-	}
-
-	/* Settings: Hotspot Options */
-	.item_b3f026[data-tab-id="Hotspot Options" i]::before {
-		mask: var(--si-HotspotOptions) center/contain no-repeat;
-	}
-
-	/* Settings: Dismissible Contents */
-	.item_b3f026[data-tab-id="Dismissible Content Options" i]::before {
-		mask: var(--si-DismissibleConents) center/contain no-repeat;
-	}
-
-	/* Settings: Payment Flow Modals */
-	.item_b3f026[data-tab-id="Payment Flow Modals" i]::before {
-		mask: var(--si-PaymentFlowModals) center/contain no-repeat;
-	}
-
-	/* Settings: Design Systems */
-	.item_b3f026[data-tab-id="Design System" i]::before {
-		mask: var(--si-DesignSystems) center/contain no-repeat;
-	}
-
-	/* Settings: Text Playground */
-	.item_b3f026[data-tab-id="Text Playground" i]::before {
-		mask: var(--si-TextPlayground) center/contain no-repeat;
-	}
-
-	/* Settings: Text Components */
-	.item_b3f026[data-tab-id="Text Component" i]::before {
-		mask: var(--si-TextComponents) center/contain no-repeat;
-	}
-
-	/* Settings: Intl Testing */
-	.item_b3f026[data-tab-id="Intl Testing" i]::before {
-		mask: var(--si-IntlTesting) center/contain no-repeat;
-	}
-
-	/* Settings: Profile Effects Preview Tool */
-	.item_b3f026[data-tab-id="Profile Effects Preview Tool" i]::before {
-		mask: var(--si-ProfileEffectsPreview) center/contain no-repeat;
-	}
-
-	/* Settings: Web Setting Tree Tool */
-	.item_b3f026[data-tab-id="Web Setting Tree Tool" i]::before {
-		mask: var(--si-WebSettingTreeTool) center/contain no-repeat;
-	}
-
-	/* Log Out */
-	.item_b3f026[data-tab-id="logout"]::before {
-		mask: var(--si-Logout) center/contain no-repeat;
-	}
-
-	/*      SERVER ICONS        */
-
-	/* Server: Overview */
-	.item_b3f026[data-tab-id="OVERVIEW"]::before {
-		mask: var(--si-Overview) center/contain no-repeat;
-	}
-
-	/* Server: Roles */
-	.item_b3f026[data-tab-id="ROLES"]::before {
-		mask: var(--si-Roles) center/contain no-repeat;
-	}
-
-	/* Server: Emoji */
-	.item_b3f026[data-tab-id="EMOJI"]::before {
-		mask: var(--si-Emoji) center/contain no-repeat;
-	}
-
-	/* Server: Stickers */
-	.item_b3f026[data-tab-id="STICKERS"]::before {
-		mask: var(--si-Stickers) center/contain no-repeat;
-	}
-
-	/* Server: Soundboard */
-	.item_b3f026[data-tab-id="SOUNDBOARD"]::before {
-		mask: var(--si-Soundboard) center/contain no-repeat;
-	}
-
-	/* Server: Widgets */
-	.item_b3f026[data-tab-id="WIDGET"]::before {
-		mask: var(--si-Widget) center/contain no-repeat;
-	}
-
-	/* Server: Server Template */
-	.item_b3f026[data-tab-id="GUILD_TEMPLATES"]::before {
-		mask: var(--si-Template) center/contain no-repeat;
-	}
-
-	/* Server: Custom Invite Link */
-	.item_b3f026[data-tab-id="VANITY_URL"]::before {
-		mask: var(--si-CustomInvite) center/contain no-repeat;
-	}
-
-	/*      Apps        */
-	/* Server - Apps: Integrations */
-	.item_b3f026[data-tab-id="INTEGRATIONS"]::before {
-		mask: var(--si-Integrations) center/contain no-repeat;
-	}
-
-	/* Server - Apps: App Directory */
-	.item_b3f026[data-tab-id="APP_DIRECTORY"]::before {
-		mask: var(--si-AppDirectory) center/contain no-repeat;
-	}
-
-	/*      Moderation      */
-
-	/* Server - Moderation: Safety Setup */
-	.item_b3f026[data-tab-id="MODERATION"]::before,
-	.item_b3f026[data-tab-id="SAFETY"]::before {
-		mask: var(--si-SafetySetup) center/contain no-repeat;
-	}
-
-	/* Server - Moderation: AutoMod */
-	.item_b3f026[data-tab-id="GUILD_AUTOMOD"]::before {
-		mask: var(--si-AutoMod) center/contain no-repeat;
-	}
-
-	/* Server - Moderation: Audit Log */
-	.item_b3f026[data-tab-id="AUDIT_LOG"]::before {
-		mask: var(--si-AuditLog) center/contain no-repeat;
-	}
-
-	/* Server - Moderation: Bans */
-	.item_b3f026[data-tab-id="BANS"]::before {
-		mask: var(--si-Bans) center/contain no-repeat;
-	}
-
-	/*      Community       */
-
-	/* Server - Community: Overview/Enable Community */
-	.item_b3f026[data-tab-id="COMMUNITY"]::before {
-		mask: var(--si-Overview) center/contain no-repeat;
-	}
-
-	/* Server - Community: Onboarding */
-	.item_b3f026[data-tab-id="ONBOARDING"]::before {
-		mask: var(--si-Onboarding) center/contain no-repeat;
-	}
-
-	/* Server - Community: Insights */
-	.item_b3f026[data-tab-id="ANALYTICS"]::before {
-		mask: var(--si-Insights) center/contain no-repeat;
-	}
-
-	/* Server Community: Partner Program Icon */
-	.item_b3f026[data-tab-id="PARTNER"]::before {
-		mask: var(--si-Partner);
-	}
-
-	/* Server - Community: Discovery */
-	.item_b3f026[data-tab-id="DISCOVERY"]::before {
-		mask: var(--si-Discovery) center/contain no-repeat;
-	}
-
-	/*      Monetization       */
-	/* Server - Monetization: Server Subscriptions */
-	.item_b3f026[data-tab-id="ROLE_SUBSCRIPTIONS"]::before {
-		mask: var(--si-Subscriptions) center/contain no-repeat;
-	}
-
-	/* Server - Monetization: Server Boost Status */
-	.item_b3f026[data-tab-id="GUILD_PREMIUM"]::before {
-		mask: var(--si-ServerBoost) center/contain no-repeat;
-	}
-
-	.item_b3f026[data-tab-id="GUILD_PREMIUM"]:hover::before,
-	.selected_b3f026.item_b3f026[data-tab-id="GUILD_PREMIUM"]::before {
-		background-color: var(--guild-boosting-pink) !important;
-	}
-
-	/*      User Management       */
-
-	/* Server - User Management: Members */
-	.item_b3f026[data-tab-id="MEMBERS"]::before {
-		mask: var(--si-Members) center/contain no-repeat;
-	}
-
-	/* Server: Invites */
-	.item_b3f026[data-tab-id="INSTANT_INVITES"]::before {
-		mask: var(--si-Invite) center/contain no-repeat;
-	}
-
-	/* Server: Permissions */
-	.item_b3f026[data-tab-id="PERMISSIONS"]::before {
-		mask: var(--si-Permissions) center/contain no-repeat;
-	}
-
-	/* Server: Delete Icon */
-	.item_b3f026[data-tab-id="DELETE"]::before {
-		mask: var(--si-Delete) center/contain no-repeat;
-	}
-
-	/* Make Delete/Logout Buttons Red */
-	.item_b3f026[data-tab-id="DELETE"],
-	.item_b3f026[data-tab-id="logout"] {
-		color: var(--info-danger-foreground) !important;
-	}
-
-	.item_b3f026[data-tab-id="DELETE"]:hover,
-	.item_b3f026[data-tab-id="logout"]:hover {
-		background-color: var(--info-danger-background) !important;
-	}
-
-	.item_b3f026[data-tab-id="DELETE"]::before,
-	.item_b3f026[data-tab-id="logout"]::before {
-		background-color: var(--info-danger-foreground) !important;
-		opacity: 0.6;
-	}
-
-	.item_b3f026[data-tab-id="DELETE"]:hover::before,
-	.item_b3f026[data-tab-id="logout"]:hover::before {
-		opacity: 1;
-	}
 }
 
 /* You don't have ThemeAttributes :( */
-[class^="standardSidebarView_"]:not(:has([data-tab-id])) {
+.standardSidebarView__23e6b:not(:has([data-tab-id])) {
 
 	/* Nitro, Server Boost & Subscriptions Selected Color Fix */
-	[class*="selectedBackground_"],
-	[class*="serverBoostTabItem_"][aria-selected="true"] {
+	.sidebar__23e6b .item_b3f026 .selectedBackground_e681d1 {
 		background-color: unset !important;
-		z-index: 0;
 	}
-
-	[class^="premiumLabel_"] svg,
-	[class*="serverBoostTabItem_"] .icon_cbe0b4 {
-		display: none;
+	.sidebar__23e6b .item_b3f026.selected_b3f026.serverBoostTabItem_f7189e {
+		background-color: var(--background-modifier-selected) !important;
 	}
 
 	.item_b3f026[aria-label="My Account" i]::before {
@@ -1016,7 +570,11 @@
 		mask: var(--si-ProfileCustomization) center/contain no-repeat;
 	}
 
-	.item_b3f026[aria-label="Privacy & Safety" i]::before {
+	.item_b3f026[aria-label="Content & Social" i]::before {
+		mask: var(--si-ContentSocial) center/contain no-repeat;
+	}
+
+	.item_b3f026[aria-label="Data & Privacy" i]::before {
 		mask: var(--si-PrivacySafety) center/contain no-repeat;
 	}
 
@@ -1115,21 +673,22 @@
 
 	/* Keybinds */
 
-	.item_b3f026:nth-child(26)::before {
+	.item_b3f026[aria-label="Notifications" i]+.item_b3f026::before  {
 		mask: var(--si-Keybinds) center/contain no-repeat;
 	}
 
 	/* Language */
 
-	.item_b3f026:nth-child(27)::before {
+	.item_b3f026[aria-label="Notifications" i]+.item_b3f026+.item_b3f026::before  {
 		mask: var(--si-Language) center/contain no-repeat;
 	}
 
 	/* Windows Settings */
-
-	.item_b3f026:nth-child(28)::before {
+/**
+	.item_b3f026[aria-label="Notifications" i]+.item_b3f026+.item_b3f026+.item_b3f026::before  {
 		mask: var(--si-Windows) center/contain no-repeat;
 	}
+	**/
 
 	/* Streamer Mode */
 
@@ -1174,9 +733,6 @@
 	}
 
 	/* Vencord Fix Missing/Broken Icons */
-	.vc-backup-restore.item_b3f026+.separator_b3f026+.header_b3f026+.item_b3f026::before {
-		mask: var(--si-ActivityPrivacy) center/contain no-repeat;
-	}
 
 	.vc-backup-restore.item_b3f026+.separator_b3f026+.header_b3f026+.item_b3f026+.item_b3f026::before {
 		mask: var(--si-GameActivity) center/contain no-repeat;
@@ -1192,7 +748,7 @@
 
 	/* Activity Privacy */
 
-	.item_b3f026:nth-child(32)::before {
+	.item_b3f026[aria-label="Activity Privacy" i]::before {
 		mask: var(--si-ActivityPrivacy) center/contain no-repeat;
 	}
 
@@ -1234,12 +790,12 @@
 	}
 
 	/* Plugin Repo */
-	[class^="sidebarRegionScroller_"] .item_b3f026[aria-controls="pluginrepo-tab" i]::before {
+	.sidebarRegionScroller__23e6b .item_b3f026[aria-controls="pluginrepo-tab" i]::before {
 		mask: var(--si-Plugins) center/contain no-repeat;
 	}
 
 	/* Theme Repo */
-	[class^="sidebarRegionScroller_"] .item_b3f026[aria-controls="themerepo-tab" i]::before {
+  .sidebarRegionScroller__23e6b .item_b3f026[aria-controls="themerepo-tab" i]::before {
 		mask: var(--si-Themes) center/contain no-repeat;
 	}
 
@@ -1279,10 +835,6 @@
 
 	.item_b3f026[aria-label="Log Out"]:hover {
 		background-color: var(--info-danger-background);
-	}
-
-	.item_b3f026[aria-label="Log Out"] .tabBarItemContainer_c7e907 svg {
-		display: none;
 	}
 
 	/* Server: Overview Icon */
@@ -1444,11 +996,5 @@
 	.item_b3f026[aria-label="Delete Server" i]:hover,
 	.item_b3f026[aria-label="Delete Channel" i]:hover {
 		background-color: var(--info-danger-background) !important;
-	}
-
-	.item_b3f026[aria-label="Delete Category"] .tabBarItemContainer_c7e907 svg,
-	.item_b3f026[aria-label="Delete Server" i] .tabBarItemContainer_c7e907 svg,
-	.item_b3f026[aria-label="Delete Channel" i] .tabBarItemContainer_c7e907 svg {
-		display: none;
 	}
 }
